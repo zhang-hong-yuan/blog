@@ -1,0 +1,17 @@
+{
+	"$currentUser": "Arvin",
+	"Arvin": {
+		"loginCount": 7,
+		"spelling": {
+			"$right": 0,
+			"$wrong": 0
+		}
+	},
+	"Tyla": {
+		"loginCount": 1,
+		"spelling": {
+			"$right": 0,
+			"$wrong": 0
+		}
+	}
+}

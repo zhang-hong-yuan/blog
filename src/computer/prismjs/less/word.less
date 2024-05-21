@@ -1,0 +1,234 @@
+hr.wordGap {
+	margin-top: 88px;
+	border-top: 6px solid #ccc;
+	transform: scaleX(1.08);
+}
+
+
+
+div.word {
+	margin: 14px 0;
+	padding: 6px 10px 6px 6px;
+	border-bottom: 1px solid #eee;
+
+	&:last-of-type { border: none; }
+
+	// 当前激活的 div.card 添加的类名
+	// &.active {}
+
+
+	button {
+		// 顶部按钮与 swiperButton 相冲突
+		position: relative;
+		z-index: 3;
+		color: inherit;
+	}
+
+	// 词性标记
+	i.label {
+		padding: 1px 2px;
+		margin-right: 3px;
+		border-radius: 3px;
+		color: #fff;
+		font-style: normal;
+		font-size: 10px;
+		font-weight: 700;
+	}
+
+	header {
+
+		nav {
+			& > button.major {
+				border: none;
+				background-color: transparent;
+				color: #000;
+				border-radius: 8px;
+				font-size: 36px;
+				line-height: 1.2;
+				padding: 0;
+				margin: 0;
+				vertical-align: -6px;
+
+				&:hover { background-color: transparent; }
+			}
+
+			& > button {
+				margin: 0 0 0 13px;
+				padding: 2px 10px;
+				border: none;
+				outline: none;
+				border-radius: 12px;
+				background-color: rgb(242,243,245);
+				font-size: 12px;
+				transition: all 0.3s;
+
+				&:hover { background-color: rgb( 229,230,235 ); }
+
+				&[data-bep]::before { content: '英'; }
+				&[data-aep]::before { content: '美'; }
+
+				img {
+					width: 12.5px;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	section {
+
+		p.phrase {
+			margin: 16px 0;
+
+			strong {
+				margin: 0 6px;
+				vertical-align: -1px;
+			}
+
+			button {
+				width: 1.2em;
+				margin-left: 10px;
+				padding: 0;
+				border: none;
+				outline: none;
+				background-color: transparent;
+				vertical-align: baseline;
+				opacity: 0.3;
+				transition: all 0.3s;
+				line-height: 1;
+
+				&:hover { opacity: 1; }
+
+				img {
+					width: 100%;
+				}
+			}
+
+			& + dl > dt {
+				margin-top: 0;
+			}
+		}
+
+		dl {
+			margin-bottom: 20px;
+
+			dt {
+				font-weight: normal;
+				font-size: 15px;
+
+				p {
+					margin: 0;
+					font-size: 15px;
+					// span {
+					// 	vertical-align: middle;
+					// }
+
+					i.order {
+						font-style: normal;
+						font-weight: 700;
+					}
+
+					span.comb {
+						margin: 0;
+
+						b {
+							padding: 1px 6px;
+							border-radius: 4px;
+							background-color: #eee;
+							font-weight: normal;
+							margin: 0 3px;
+						}
+					}
+				}
+
+
+				figure {
+					margin: 0 0 1em;
+
+					video {
+						width: 99%;
+						border-radius: 12px;
+						background-color: #eee;
+					}
+				}
+			}
+
+			dd {
+				margin-left: 36px;
+				margin-bottom: 20px;
+
+				figure {
+					margin: 30px 0 0;
+
+					& > div.n-image {
+						display: inline-block;
+						width: 42%;
+						margin-right: 15px;
+
+						img {
+							width: 100%;
+							max-width: 166px;
+							border-radius: 10px;
+						}
+					}
+				}
+
+				p {
+					margin: 0;
+					color: #888;
+
+					&.en {
+						font-size: 16px;
+
+						&:hover strong {
+							color: tomato;
+							border-bottom: 1px solid tomato;
+						}
+
+						strong {
+							font-weight: normal;
+							color: #333;
+							// transition: all 0.3s;
+						}
+
+						button {
+							width: 1.5em;
+							margin-left: 13px;
+							padding: 0;
+							border: none;
+							outline: none;
+							background-color: transparent;
+							vertical-align: baseline;
+							opacity: 0.3;
+							transition: all 0.3s;
+							line-height: 1;
+
+							&:hover { opacity: 1; }
+
+							img {
+								width: 100%;
+							}
+						}
+					}
+
+					&.zh {
+						font-size: 13px;
+
+						span.___mark___ {
+							border-bottom: 1px solid #888;
+							padding: 0;
+							background-color: transparent;
+							color: #333;
+						}
+
+						&:hover span.___mark___ {
+							border-bottom: 1px solid tomato;
+							color: tomato;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+	}
+}

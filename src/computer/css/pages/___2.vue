@@ -1,0 +1,428 @@
+<template>
+	<h1>选择器</h1>
+	<p>选择器(选择符)就是根据不同需求把不同的标签选出来，这就是选择器的作用。可以将 CSS 选择器分为五类：</p>
+	<ul>
+		<li>简单选择器(根据名称、id、类来选取元素)</li>
+		<li>组合器选择器(根据它们之间的特定关系来选取元素)</li>
+		<li>伪元素选择器(选取元素的一部分并设置其样式)</li>
+		<li>伪类选择器(根据特定状态选取元素)</li>
+		<li>属性选择器(根据属性或属性值来选取元素)</li>
+
+	</ul>
+	<br>
+	<p><strong>CSS的三大特性</strong>：</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th>说明</th>
+					<th>原则</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>层叠性</td>
+					<td>相同元素设置相同的样式，此时一个样式就会覆盖(层叠)另一个冲突的样式。层叠性主要解决样式冲突的问题。</td>
+					<td>样式冲突，遵循就近原则，哪个样式离结构近，就执行哪个样式；样式不冲突，不会层叠。</td>
+				</tr>
+				<tr>
+					<td>继承性</td>
+					<td>子标签会继承父标签的某些样式，如文本颜色和字号。恰当地使用继承可以简化代码，降低CSS样式的复杂性。</td>
+					<td>子元素可以继承父元素的样式(text-，font-，line- 这些元素开头的可以继承，以及color属性。</td>
+				</tr>
+				<tr>
+					<td>优先级</td>
+					<td>当同一个元素指定多个选择器，就会有优先级的产生。</td>
+					<td>选择器相同，则执行层叠性；选择器不同，则根据选择器权重执行。</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<p>权重是有4组数字组成，但是不会有进位。选择器权重如下：</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th>选择器</th>
+					<th>权重</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>继承 和 【*】</td>
+					<td>0,0,0,0</td>
+				</tr>
+				<tr>
+					<td>元素选择器 和 伪元素</td>
+					<td>0,0,0,<strong style='color:tomato;'>1</strong></td>
+				</tr>
+				<tr>
+					<td>类、伪类、属性选择器</td>
+					<td>0,0,<strong style='color:tomato;'>1</strong>,0</td>
+				</tr>
+				<tr>
+					<td>ID选择器</td>
+					<td>0,<strong style='color:tomato;'>1</strong>,0,0</td>
+				</tr>
+				<tr>
+					<td>行内样式 【style=&quot;&quot;】</td>
+					<td><strong style='color:tomato;'>1</strong>,0,0,0</td>
+				</tr>
+				<tr>
+					<td>【!important】</td>
+					<td>∞无穷大</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<h2>简单选择器</h2>
+	<p>基础选择器主要有：标签选择器、类选择器、id选择器以及通配符选择器。</p>
+	<p><strong>通配符选择器</strong>使用 【*】 定义，它表示选取页面中所有元素。通配符选择器不需要调用，自动就给所有的元素使用样式。</p>
+	<p><strong>标签选择器(元素选择器)</strong>是指用 HTML 标签名称作为选择器，按标签名称分类，为页面中某一类标签指定统一的 CSS 样式。</p>
+	<ul>
+		<li>优点：能快速为页面中同类型的标签统一设置样式。</li>
+		<li>缺点：不能设计差异化样式，只能选择全部的当前标签。</li>
+
+	</ul>
+	<p>
+		<strong>类选择器</strong>，如果想要差异化选择不同的标签，单独选一个或者某几个标签，可以使用类选择器。结构需要用class属性来调用。可以给一个标签指定多个类名，从而达到更多的选择目的。这些类名都可以选出这个标签，各个类名中间用空格隔开。
+	</p>
+	<p><strong>id 选择器</strong>可以为标有特定 id 的 HTML 元素指定特定的样式。HTML 元素以 id 属性来设置 id 选择器，CSS 中 id 选择器以【#】来定义。</p>
+	<blockquote>
+		<p>注：id 选择器和类选择器最大的不同在于使用次数上。</p>
+	</blockquote>
+	<h2>组合器选择器</h2>
+	<p>常用的复合选择器包括后代选择器、子选择器和并集选择器等等。</p>
+	<p><strong>后代选择器</strong>又称为包含选择器，可以选择父元素里面子元素。其写法就是把外层标签写在前面，内层标签写在后面，中间用【空格】分隔。当标签发生嵌套时，内层标签就成为外层标签的后代。</p>
+	<p><strong>子元素选择器</strong>只能选择作为某元素的最近一级子元素。中间用大于号 【&gt;】 隔开。</p>
+	<p><strong>相邻兄弟选择器</strong>匹配所有作为指定元素的<u>相邻同级</u>的元素。兄弟(同级)元素必须具有相同的父元素，“相邻”的意思是“紧随其后”。中间用加号 【+】 隔开。</p>
+	<p><strong>通用兄弟选择器</strong>匹配属于指定元素的同级元素的所有元素。中间用波浪线 【~】 隔开。</p>
+	<p><strong>并集选择器</strong>可以选择多组标签，同时为他们定义相同的样式。通常用于集体声明。并集选择器是各选择器通过英文逗号 【,】 连接而成，任何形式的选择器都可以作为并集选择器的一部分。</p>
+	<h2>伪元素选择器</h2>
+	<p>CSS 伪元素用于设置元素指定部分的样式。它可用于：</p>
+	<ul>
+		<li>设置元素的首字母、首行的样式</li>
+		<li>在元素的内容之前或之后插入内容</li>
+
+	</ul>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th style='text-align:left;'>选择器</th>
+					<th style='text-align:left;'>例子</th>
+					<th style='text-align:left;'>例子描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style='text-align:left;'>::after</td>
+					<td style='text-align:left;'>p::after</td>
+					<td style='text-align:left;'>在每个 【&lt;p&gt;】 元素内部的后面插入内容。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>::before</td>
+					<td style='text-align:left;'>p::before</td>
+					<td style='text-align:left;'>在每个 【&lt;p&gt;】 元素内部的前面插入内容。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>::first-letter</td>
+					<td style='text-align:left;'>p::first-letter</td>
+					<td style='text-align:left;'>选择每个 【&lt;p&gt;】 元素的首字母。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>::first-line</td>
+					<td style='text-align:left;'>p::first-line</td>
+					<td style='text-align:left;'>选择每个 【&lt;p&gt;】 元素的首行。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>::selection</td>
+					<td style='text-align:left;'>p::selection</td>
+					<td style='text-align:left;'>选择用户选中的元素部分。</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<ul>
+		<li>before 和 after 必须有 content 属性</li>
+		<li>before 和 after 创建一个元素，但是属于行内元素。</li>
+		<li>因为在 dom 里面看不见创建的元素，所以称为伪元素</li>
+
+	</ul>
+	<blockquote>
+		<p>注意：【::first-letter】、【::first-line】 伪元素只能应用于块级元素。</p>
+	</blockquote>
+	<h2>属性选择器</h2>
+	<p>属性选择器等号右边的值最好加引号。</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th style='text-align:left;'>选择器</th>
+					<th style='text-align:left;'>例子</th>
+					<th style='text-align:left;'>例子描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style='text-align:left;'>[attribute]</td>
+					<td style='text-align:left;'>[target]</td>
+					<td style='text-align:left;'>选择带有 target 属性的元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>[attribute=value]</td>
+					<td style='text-align:left;'>[target=_blank]</td>
+					<td style='text-align:left;'>选择带有 target=&quot;_blank&quot; 属性的元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>[attribute<strong>|</strong>=value]</td>
+					<td style='text-align:left;'>[lang|=en]</td>
+					<td style='text-align:left;'>选择 lang 属性值带有以 &quot;en&quot; 开头的元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>[attribute<strong>^</strong>=value]</td>
+					<td style='text-align:left;'>a[href^=&quot;https&quot;]</td>
+					<td style='text-align:left;'>选择 href 属性值以 &quot;https&quot; 开头的 【&lt;a&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>[attribute$=value]</td>
+					<td style='text-align:left;'>a[href$=&quot;.pdf&quot;]</td>
+					<td style='text-align:left;'>选择 href 属性值以 &quot;.pdf&quot; 结尾的 【&lt;a&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>[attribute<strong>~</strong>=value]</td>
+					<td style='text-align:left;'>[title~=flower]</td>
+					<td style='text-align:left;'>选择 title 属性值带有包含 &quot;flower&quot; 一词的元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>[attribute<strong>*</strong>=value]</td>
+					<td style='text-align:left;'>a[href*=&quot;w3school&quot;]</td>
+					<td style='text-align:left;'>选择 href 属性值包含子串 &quot;w3school&quot; 的 【&lt;a&gt;】 元素。</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<p>【[attribute|=&quot;value&quot;]】 选择器用于选取指定属性以指定值开头的元素。</p>
+	<p>[class|=&quot;top&quot;] 选取 class 属性以 &quot;top&quot; 开头的所有元素。值必须是完整或单独的单词，比如 class=&quot;top&quot; 或者后跟连字符的，比如
+		class=&quot;top-text&quot;。</p>
+	<p>【[attribute^=&quot;value&quot;]】 选择器用于选取指定属性以指定值开头的元素。</p>
+	<p>[class^=&quot;top&quot;] 选取 class 属性以 &quot;top&quot; 开头的所有元素，值不必是完整单词！</p>
+	<p>【[attribute$=&quot;value&quot;]】 选择器用于选取指定属性以指定值结尾的元素。</p>
+	<p>[class$=&quot;test&quot;] 选取 class 属性以 &quot;test&quot; 结尾的所有元素，值不必是完整单词！</p>
+	<br />
+	<p>【[attribute~=&quot;value&quot;]】 选择器选取属性值包含指定词的元素。</p>
+	<p>选取 title 属性包含 &quot;flower&quot; 单词的所有元素，[title~=&quot;flower&quot;]
+		会匹配以下属性的元素：title=&quot;flower&quot;、title=&quot;summer flower&quot; 以及 title=&quot;flower
+		new&quot;，但不匹配：title=&quot;my-flower&quot; 或 title=&quot;flowers&quot;。</p>
+	<p>【[attribute*=&quot;value&quot;]】 选择器选取属性值包含指定词的元素。</p>
+	<p>[class*=&quot;te&quot;] 选取 class 属性包含 &quot;te&quot; 的所有元素，值不必是完整单词！</p>
+	<h2>伪类选择器</h2>
+	<p>伪类选择器用于向某些选择器添加特殊的效果，比如给链接添加特殊效果，或选择第1个，第n个元素。</p>
+	<p>伪类选择器书写最大的特点是用冒号 【:】 表示。</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th style='text-align:left;'>选择器</th>
+					<th style='text-align:left;'>例子</th>
+					<th style='text-align:left;'>例子描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style='text-align:left;'>:root</td>
+					<td style='text-align:left;'>:root</td>
+					<td style='text-align:left;'>选择根元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:not(<em>selector</em>)</td>
+					<td style='text-align:left;'>:not(p)</td>
+					<td style='text-align:left;'>选择每个非 【&lt;p&gt;】 元素的元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:empty</td>
+					<td style='text-align:left;'>p:empty</td>
+					<td style='text-align:left;'>选择没有子元素的每个 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:target</td>
+					<td style='text-align:left;'>#news:target</td>
+					<td style='text-align:left;'>选择当前活动的 #news 元素(锚点链接的跳转目标)。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:lang(<em>language</em>)</td>
+					<td style='text-align:left;'>p:lang(it)</td>
+					<td style='text-align:left;'>选择每个 lang 属性值以 &quot;it&quot; 开头的 【&lt;p&gt;】 元素。</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<p>在 HTML 中，根元素始终是 html 元素。</p>
+	<p>:lang 伪类允许为不同的语言定义特殊的规则。</p>
+	<pre v-code:css>p:lang(en) { background: yellow; }</pre>
+	<h3>链接伪类选择器</h3>
+	<p>链接伪类选择器注意事项：为了确保生效，请按照 【LVHA】 的循顺序声明 【:link】 【:visited】 【:hover】
+		【:active】 (love hate 或者 lv 包包 hao)</p>
+	<p>因为 a 链接在浏览器中具有默认样式，所以实际工作中都需要给链接单独指定样式。</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th style='text-align:left;'>选择器</th>
+					<th style='text-align:left;'>例子</th>
+					<th style='text-align:left;'>例子描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style='text-align:left;'>:link</td>
+					<td style='text-align:left;'>a:link</td>
+					<td style='text-align:left;'>选择所有未被访问的链接。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:visited</td>
+					<td style='text-align:left;'>a:visited</td>
+					<td style='text-align:left;'>选择所有已访问的链接。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:hover</td>
+					<td style='text-align:left;'>a:hover</td>
+					<td style='text-align:left;'>选择鼠标悬停其上的链接。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:active</td>
+					<td style='text-align:left;'>a:active</td>
+					<td style='text-align:left;'>选择活动的链接。</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<h3>结构伪类选择器</h3>
+	<p>Nth-child 从所有子级开始算的，可能不是同一种类型。</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th style='text-align:left;'>选择器</th>
+					<th style='text-align:left;'>例子</th>
+					<th style='text-align:left;'>例子描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style='text-align:left;'>:first-child</td>
+					<td style='text-align:left;'>p:first-child</td>
+					<td style='text-align:left;'>选择作为首个子元素的 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:last-child</td>
+					<td style='text-align:left;'>p:last-child</td>
+					<td style='text-align:left;'>选择作为最后一个子元素的 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:only-child</td>
+					<td style='text-align:left;'>p:only-child</td>
+					<td style='text-align:left;'>选择作为唯一子元素的 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:nth-child(n)</td>
+					<td style='text-align:left;'>p:nth-child(2)</td>
+					<td style='text-align:left;'>选择作为第二个子元素的 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:nth-last-child(n)</td>
+					<td style='text-align:left;'>p:nth-last-child(2)</td>
+					<td style='text-align:left;'>选择作为倒数第二个子元素的 【&lt;p&gt;】 元素。</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<p>Nth-of-type 是指定同一种类型的子级。</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th style='text-align:left;'>选择器</th>
+					<th style='text-align:left;'>例子</th>
+					<th style='text-align:left;'>例子描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style='text-align:left;'>:first-of-type</td>
+					<td style='text-align:left;'>p:first-of-type</td>
+					<td style='text-align:left;'>选择首个 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:last-of-type</td>
+					<td style='text-align:left;'>p:last-of-type</td>
+					<td style='text-align:left;'>选择最后一个 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:only-of-type</td>
+					<td style='text-align:left;'>p:only-of-type</td>
+					<td style='text-align:left;'>选择唯一 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:nth-of-type(<em>n</em>)</td>
+					<td style='text-align:left;'>p:nth-of-type(2)</td>
+					<td style='text-align:left;'>选择第二个 【&lt;p&gt;】 元素。</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>:nth-last-of-type(<em>n</em>)</td>
+					<td style='text-align:left;'>p:nth-last-of-type(2)</td>
+					<td style='text-align:left;'>选择倒数第二个 【&lt;p&gt;】 元素。</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<p>【:nth-child(n)】 和 【:nth-of-type(n)】，其中 n 可以是数字，关键字和公式。</p>
+	<ul>
+		<li>n如果是数字，就是选择第n个</li>
+		<li>常见的关键词 even 偶数 odd 奇数</li>
+		<li>常见的公式如下 (如果n是公式，则从0开始计算，第0个元素或者超出了元素的个数会被忽略)</li>
+
+	</ul>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th style='text-align:left;'>公式</th>
+					<th style='text-align:left;'>取值</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style='text-align:left;'>2n</td>
+					<td style='text-align:left;'>偶数</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>2n+1</td>
+					<td style='text-align:left;'>奇数</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>5n</td>
+					<td style='text-align:left;'>5 10 15 ……</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>n+5</td>
+					<td style='text-align:left;'>从第5个开始(包含第五个)到最后</td>
+				</tr>
+				<tr>
+					<td style='text-align:left;'>-n+5</td>
+					<td style='text-align:left;'>前5个(包含第5个)...</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<blockquote>
+		<p><strong>【:nth-child(n)】 和 【:nth-of-type(n)】 的区别：</strong></p>
+		<ol>
+			<li>nth-child 对父元素里面所有孩子排序选择(序号是固定的)。先找到第n个孩子，然后看看是否和E匹配。</li>
+			<li>nth-of-type 对父元素里面指定子元素进行排序选择。先去匹配E，然后再根据 E 找第n个孩子。</li>
+
+		</ol>
+	</blockquote>
+
+</template>

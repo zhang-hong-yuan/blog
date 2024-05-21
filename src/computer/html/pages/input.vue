@@ -1,0 +1,272 @@
+<template>
+	<h1>&lt;input&gt;</h1>
+	<p>在英文单词中，input 是输入的意思，而在表单元素中 【&lt;input&gt;】 标签用于收集用户信息。</p>
+	<p>在 【&lt;input&gt;】 标签中，包含一个 type 属性，根据不同的 type 属性值，输入字段拥有很多种形式(可以是文本字段、复选框、掩码后的文本控件、单选按钮、按钮等)。</p>
+	<p>可以使用 【&lt;label&gt;】 元素来定义 【&lt;input&gt;】 元素的标注。</p>
+	<p>【&lt;input&gt;】 元素是空的，它只包含标签属性。【&lt;input /&gt;】 标签为单标签。type 属性设置不同的属性值用来指定不同的控件类型。</p>
+
+
+
+	<table>
+		<tr>
+			<th>值</th>
+			<th>描述</th>
+		</tr>
+		<tr>
+			<td>hidden</td>
+			<td>定义隐藏输入字段。</td>
+		</tr>
+		<tr>
+			<td>text</td>
+			<td>默认。定义一个单行的文本字段(默认宽度为 20 个字符)。</td>
+		</tr>
+		<tr>
+			<td>url</td>
+			<td>定义用于输入 URL 的字段。</td>
+		</tr>
+		<tr>
+			<td>search</td>
+			<td>定义用于输入搜索字符串的文本字段。</td>
+		</tr>
+		<tr>
+			<td>email</td>
+			<td>定义用于 e-mail 地址的字段。</td>
+		</tr>
+		<tr>
+			<td>password</td>
+			<td>定义密码字段(字段中的字符会被遮蔽)。</td>
+		</tr>
+		<tr>
+			<td>number</td>
+			<td>定义用于输入数字的字段。</td>
+		</tr>
+		<tr>
+			<td>tel</td>
+			<td>定义用于输入电话号码的字段。</td>
+		</tr>
+		<tr>
+			<td>range</td>
+			<td>定义用于精确值不重要的输入数字的控件(比如 slider 控件)。</td>
+		</tr>
+		<tr>
+			<td>color</td>
+			<td>定义拾色器。</td>
+		</tr>
+		<tr>
+			<td>file</td>
+			<td>定义文件选择字段和 &quot;浏览...&quot; 按钮，供文件上传。</td>
+		</tr>
+		<tr>
+			<td>button</td>
+			<td>定义可点击的按钮(通常与 JavaScript 一起使用来启动脚本)。</td>
+		</tr>
+		<tr>
+			<td>image</td>
+			<td>定义图像作为提交按钮。</td>
+		</tr>
+		<tr>
+			<td>reset</td>
+			<td>定义重置按钮(重置所有的表单值为默认值)。</td>
+		</tr>
+		<tr>
+			<td>submit</td>
+			<td>定义提交按钮。</td>
+		</tr>
+		<tr>
+			<td>radio</td>
+			<td>定义单选按钮。</td>
+		</tr>
+		<tr>
+			<td>checkbox</td>
+			<td>定义复选框。(注：radio/checkbox如果是一组，则必须给相同的name值)</td>
+		</tr>
+		<tr>
+			<td>datetime</td>
+			<td>定义 date 和 time 控件(包括年、月、日、时、分、秒、几分之一秒，基于 UTC 时区)。</td>
+		</tr>
+		<tr>
+			<td>datetime-local</td>
+			<td>定义 date 和 time 控件(包括年、月、日、时、分、秒、几分之一秒，不带时区)。</td>
+		</tr>
+		<tr>
+			<td>date</td>
+			<td>定义 date 控件(包括年、月、日，不包括时间)。</td>
+		</tr>
+		<tr>
+			<td>month</td>
+			<td>定义 month 和 year 控件(不带时区)。</td>
+		</tr>
+		<tr>
+			<td>week</td>
+			<td>定义 week 和 year 控件(不带时区)。</td>
+		</tr>
+		<tr>
+			<td>time</td>
+			<td>定义用于输入时间的控件(不带时区)。</td>
+		</tr>
+	</table>
+
+
+
+
+	<p>除 type 属性外，【&lt;input&gt;】 标签还有其他很多属性，其常用属性如下：</p>
+
+
+	<table>
+		<tr>
+			<th>属性</th>
+			<th>值</th>
+			<th>描述</th>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td><em>text</em></td>
+			<td>name 属性规定 【&lt;input&gt;】 元素的名称。</td>
+		</tr>
+		<tr>
+			<td>value</td>
+			<td><em>text</em></td>
+			<td>指定 【&lt;input&gt;】 元素 value 的值。</td>
+		</tr>
+		<tr>
+			<td>checked</td>
+			<td>checked</td>
+			<td>checked 属性规定在页面加载时应该被预先选定的 【&lt;input&gt;】 元素。 (只针对 【type = &quot;checkbox&quot;】 或者
+				【type = &quot;radio&quot;】)</td>
+		</tr>
+		<tr>
+			<td>maxlength</td>
+			<td><em>number</em></td>
+			<td>属性规定 【&lt;input&gt;】 元素中允许的最大字符数。</td>
+		</tr>
+		<tr>
+			<td>accept</td>
+			<td>audio/* video/* image/<em>*MIME_type</em></td>
+			<td>规定通过文件上传来提交的文件的类型。 (只针对 【type=&quot;file&quot;】)</td>
+		</tr>
+		<tr>
+			<td>alt</td>
+			<td><em>text</em></td>
+			<td>定义图像输入的替代文本。 (只针对 【type=&quot;image&quot;】)</td>
+		</tr>
+		<tr>
+			<td>autocomplete</td>
+			<td>on/off</td>
+			<td>autocomplete 属性规定 【&lt;input&gt;】 元素输入字段是否应该启用自动完成功能。</td>
+		</tr>
+		<tr>
+			<td>autofocus</td>
+			<td>autofocus</td>
+			<td>属性规定当页面加载时 【&lt;input&gt;】 元素应该自动获得焦点。</td>
+		</tr>
+		<tr>
+			<td>disabled</td>
+			<td>disabled</td>
+			<td>disabled 属性规定应该禁用的 【&lt;input&gt;】 元素。</td>
+		</tr>
+		<tr>
+			<td>form</td>
+			<td><em>form_id</em></td>
+			<td>form 属性规定 【&lt;input&gt;】 元素所属的一个或多个表单。</td>
+		</tr>
+		<tr>
+			<td>formaction</td>
+			<td><em>URL</em></td>
+			<td>属性规定当表单提交时处理输入控件的文件的 URL。(只针对 【type=&quot;submit&quot;】 和 【type=&quot;image&quot;】)
+			</td>
+		</tr>
+		<tr>
+			<td>formenctype</td>
+			<td>application/x-www-form-urlencoded<br />multipart/form-data<br />text/plain</td>
+			<td>属性规定当表单数据提交到服务器时如何编码(只适合 【type=&quot;submit&quot;】 和 【type=&quot;image&quot;】)。</td>
+		</tr>
+		<tr>
+			<td>formmethod</td>
+			<td>get<br />post</td>
+			<td>定义发送表单数据到 action URL 的 HTTP 方法。 (只适合 【type=&quot;submit&quot;】 和
+				【type=&quot;image&quot;】)</td>
+		</tr>
+		<tr>
+			<td>formnovalidate</td>
+			<td>formnovalidate</td>
+			<td>formnovalidate 属性覆盖 【&lt;form&gt;】 元素的 novalidate 属性。</td>
+		</tr>
+		<tr>
+			<td>formtarget</td>
+			<td>_blank<br />_self<br />_parent<br />_top<br /><em>framename</em></td>
+			<td>规定表示提交表单后在哪里显示接收到响应的名称或关键词。(只适合 【type=&quot;submit&quot;】 和 【type=&quot;image&quot;】)
+			</td>
+		</tr>
+		<tr>
+			<td>list</td>
+			<td><em>datalist_id</em></td>
+			<td>属性引用 【&lt;datalist&gt;】 元素，其中包含 【&lt;input&gt;】 元素的预定义选项。</td>
+		</tr>
+		<tr>
+			<td>max</td>
+			<td><em>number date</em></td>
+			<td>属性规定 【&lt;input&gt;】 元素的最大值。</td>
+		</tr>
+		<tr>
+			<td>min</td>
+			<td><em>number date</em></td>
+			<td>属性规定 【&lt;input&gt;】元素的最小值。</td>
+		</tr>
+		<tr>
+			<td>multiple</td>
+			<td>multiple</td>
+			<td>属性规定允许用户输入到 【&lt;input&gt;】 元素的多个值。</td>
+		</tr>
+		<tr>
+			<td>pattern</td>
+			<td><em>regexp</em></td>
+			<td>pattern 属性规定用于验证 【&lt;input&gt;】 元素的值的正则表达式。</td>
+		</tr>
+		<tr>
+			<td>placeholder</td>
+			<td><em>text</em></td>
+			<td>placeholder 属性规定可描述输入 【&lt;input&gt;】 字段预期值的简短的提示信息。</td>
+		</tr>
+		<tr>
+			<td>readonly</td>
+			<td>readonly</td>
+			<td>readonly 属性规定输入字段是只读的。</td>
+		</tr>
+		<tr>
+			<td>required</td>
+			<td>required</td>
+			<td>属性规定必需在提交表单之前填写输入字段。</td>
+		</tr>
+		<tr>
+			<td>size</td>
+			<td><em>number</em></td>
+			<td>size 属性规定以字符数计的 【&lt;input&gt;】 元素的可见宽度。</td>
+		</tr>
+		<tr>
+			<td>src</td>
+			<td><em>URL</em></td>
+			<td>src 属性规定显示为提交按钮的图像的 URL。(只针对 【type=&quot;image&quot;】)</td>
+		</tr>
+		<tr>
+			<td>step</td>
+			<td><em>number</em></td>
+			<td>step 属性规定 【&lt;input&gt;】 元素的合法数字间隔。</td>
+		</tr>
+	</table>
+
+
+
+	<p>name 和 value 是每个表单元素都有的属性值，主要给后台人员使用。</p>
+	<p>name 表单元素的名字，要求单选按钮和复选框要有相同的name值。</p>
+	<p>pattern 属性示例：</p>
+
+	<pre v-text="demo" v-code:html></pre>
+	<section v-html="demo"></section>
+</template>
+
+<script setup>
+const demo = `<form>
+	Country code: <br>
+	<input type="text" pattern="[A-Za-z]{3}">
+</form>`
+</script>

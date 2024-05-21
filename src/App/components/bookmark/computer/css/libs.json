@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Bootstrap",
+		"site": "https://www.bootcss.com",
+		"logo": "bootstrap.svg"
+	},
+	{
+		"name": "Animate",
+		"site": "https://animate.style",
+		"logo": "animate.svg"
+	},
+	{
+		"name": "Less",
+		"site": "https://less.bootcss.com",
+		"logo": "less.png"
+	}
+]

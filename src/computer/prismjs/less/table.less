@@ -1,0 +1,42 @@
+figure:has( > table) {
+	margin: 16px 0;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	width: 100%;
+	font-size: 14px;
+
+	tr {
+		background-color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+
+		th,td {
+			margin: 0px;
+			text-align: left;
+			vertical-align: top;
+			padding: 10px;
+			display: table-cell;
+		}
+
+		td {
+			color: #4D4E53;
+			font-family: Consolas, Monaco, 'Andale Mono', monospace;
+			font-size: 100%;
+			font-weight: normal;
+
+			p {
+				font-size: 14px;
+			}
+
+			code {
+				color: #606;
+			}
+		}
+	}
+}

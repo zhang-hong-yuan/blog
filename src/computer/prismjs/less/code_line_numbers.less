@@ -1,0 +1,64 @@
+main#___prismjs___{
+
+	div.code-toolbar {
+
+	pre.line-numbers {
+		counter-reset: linenumber;
+
+		& > code {
+			position: relative;
+			z-index: 1;
+			padding: 0 25px;
+
+			& > span.line-numbers-rows {
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				left: 0px;
+				width: 100%;
+				letter-spacing: -1px;
+				font-size: 1em;
+
+				& > span {
+					position: relative;
+					display: block;
+					counter-increment: linenumber;
+					transition: all 1s;
+
+					&.___mask___ {
+						background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+					}
+
+					&:hover {
+						&::before { color: #999; }
+						&::after {
+							opacity: 1;
+							background-color:	hsla(24, 20%, 50%, .1)
+							// box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+						}
+					}
+
+
+					&:before {
+						display: block;
+						float: left;
+						width: 20px;
+						content: counter(linenumber);
+						text-align: right;
+						color: transparent;
+						transition: all .4s;
+					}
+
+					&:after {
+						// 注意，这个盒子不能加边框，会改变盒子大小，从而错位 （box-sizing: border-box; 没有效果）
+						display: block;
+						opacity: 0;
+						content: '-';
+						color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+}

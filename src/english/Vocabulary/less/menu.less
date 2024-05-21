@@ -1,0 +1,46 @@
+menu {
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	top: 6px;
+	z-index: 6;
+	margin: 6px 0 0 6px;
+	padding: 14px 14px 14px 0;
+	max-height: calc(100vh - 14px);
+	border-right: 1px solid #f8f8f8;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	li {
+		list-style: none;
+		min-width: 20px;
+		max-width: 30vw;
+		border-radius: 3px;
+		transition: width 0.3s;
+
+		&:hover { background-color: #e7e7e7; }
+
+		&.topGap { margin-top: 20px; }
+
+		&.activeWord {
+			background-color: #e7e7e7;
+
+			button {
+				color: green;
+			}
+		}
+
+		button {
+			background-color: transparent;
+			border: none;
+			padding: 6px 12px;
+			font-size: 18px;
+			text-align: left;
+			transition: all 0.6s;
+		}
+	}
+}

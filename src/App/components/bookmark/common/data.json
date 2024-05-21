@@ -1,0 +1,32 @@
+[
+	{
+		"name": "百度",
+		"site": "https://www.baidu.com",
+		"logo": "baidu.svg"
+	},
+	{
+		"name": "百度翻译",
+		"site": "https://fanyi.baidu.com",
+		"logo": "baiduFanYi.svg"
+	},
+	{
+		"name": "知乎",
+		"site": "https://www.zhihu.com",
+		"logo": "zhiHu.svg"
+	},
+	{
+		"name": "bilibili",
+		"site": "https://www.bilibili.com",
+		"logo": "bilibili.svg"
+	},
+	{
+		"name": "斗鱼",
+		"site": "https://www.douyu.com/directory/myFollow",
+		"logo": "douyu.svg"
+	},
+	{
+		"name": "抖音",
+		"site": "https://www.douyin.com",
+		"logo": "douyin.svg"
+	}
+]

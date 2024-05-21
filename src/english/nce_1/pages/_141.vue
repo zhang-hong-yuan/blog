@@ -1,0 +1,144 @@
+<template>
+	<article>
+		<h1>Sally's first train ride</h1>
+		<p>Last week, my four-year-old daughter, Sally, was invited to a children's party. I 【decided】 to take her by train.
+			Sally was very excited because she had never 【travelled】 on a train before. She sat 【near】 the window and asked
+			questions about everything she saw. Suddenly, a 【middle-aged】 lady got on the train and sat opposite Sally. 'Hello,
+			little girl,' she said. Sally did not answer, but looked at her 【curiously】. The lady was dressed in a blue coat and
+			a large, funny hat. After the train had left the station, the lady opened her 【handbag】 and took to her 【powder】
+			【compact】. She then began to 【make up】 her face. 'Why are you doing that?' Sally asked. 'To make myself beautiful,'
+			the lady answered. She 【put away】 her compact and smiled kindly. 'But you are still ugly,' Sally said. Sally was
+			【amused】, but I was very 【embarrassed】!</p>
+	</article>
+	<section>
+		<section>
+			<h4>decide</h4>
+			<dl>
+				<dt>v.对…作出抉择；决定；选定|to think carefully about the different possibilities that are available and choose one of them
+				</dt>
+				<dd>[V] It was difficult to decide between the two candidates.|很难在这两个候选人之间决定取舍。</dd>
+				<dd>They decided against taking legal action.|他们决定不提起诉讼。</dd>
+				<dd>It's up to you to decide.|这事由你来决定吧。</dd>
+				<dd>[V wh-] I can't decide what to wear.|我拿不定主意穿什么。</dd>
+				<dd>[V (that)] She decided (that) she wanted to live in France.|她决定要住在法国。</dd>
+				<dd>[V to inf] We've decided not to go away after all.|我们到底还是决定不离开。</dd>
+				<dd>[VN] We might be hiring more people but nothing has been decided yet.|我们或许会再多雇些人，不过现在什么都还没定下来。</dd>
+				<dd>[VN (that)] It was decided (that) the school should purchase new software.|已经决定学校要购买新软件。</dd>
+			</dl>
+		</section>
+		<EnglishWord word="travel" />
+		<section>
+			<h4>travel</h4>
+			<!-- <ul class="" transform table_row_cell"">
+				<li><span class="" left_section"">第三人称单数</span><span class="" right_section""><a class="" youDaoFaYin
+							baiDuFanYi""> travels </a></span></li>
+				<li><span class="" left_section"">复数</span><span class="" right_section""><a class="" youDaoFaYin baiDuFanYi"">
+							travels </a></span></li>
+				<li><span class="" left_section"">现在分词</span><span class="" right_section""><a class="" youDaoFaYin baiDuFanYi"">
+							travelling </a></span></li>
+				<li><span class="" left_section"">过去式</span><span class="" right_section""><a class="" youDaoFaYin baiDuFanYi"">
+							travelled </a></span></li>
+				<li><span class="" left_section"">过去分词</span><span class="" right_section""><a class="" youDaoFaYin baiDuFanYi"">
+							travelled</a></span></li>
+			</ul> -->
+			<dl>
+				<dt>v.长途行走；旅行；游历｜to go from one place to another, especially over a long distance</dt>
+				<dd>[V] to travel around the world｜周游世界</dd>
+				<dd>I go to bed early if I'm travelling the next day.｜如果第二天去旅行我就早睡。</dd>
+				<dd>I love travelling by train.｜我喜欢乘火车旅行。</dd>
+				<dd>We always travel first class.｜我们总坐头等舱旅行。</dd>
+				<dd>We travelled to California for the wedding.｜我们到加利福尼亚去参加婚礼。</dd>
+				<dd>When I finished college I went travelling for six months (= spent time visiting different
+					places).｜我大学毕业后在外旅行了六个月。</dd>
+				<dd>[VN] He travelled the length of the Nile in a canoe.｜他乘独木舟游完尼罗河的全程。</dd>
+				<dd>I travel 40 miles to work every day.｜我每天奔波40英里去上班。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4>near</h4>
+			<dl>
+				<dt>prep.在…附近；靠近|at a short distance away from sb/sth</dt>
+				<dd>Do you live near here?|你住在这附近吗？</dd>
+				<dd>Go and sit nearer (to) the fire.|坐得靠炉子近点儿。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4>middle-aged</h4>
+			<dl>
+				<dt>adj.(of a person 人) 中年的|neither young nor old</dt>
+				<dd>The bulk of the book concerns Sandy's two middle-aged children.|书中主要描写桑迪的两个已到中年的孩子。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4 data-note="curiously">curious</h4>
+			<p>形容词 curious 的派生词：curiously adv.</p>
+			<dl>
+				<dt>adj.求知欲强的；好奇的|having a strong desire to know about sth</dt>
+				<dd>同义词： inquisitive</dd>
+				<dd>They were very curious about the people who lived upstairs.|他们对住在楼上的人感到很好奇。</dd>
+				<dd>I was curious to find out what she had said.|我真想弄清楚她说了些什么。</dd>
+				<dd>Everyone was curious as to why Mark was leaving.|马克为什么要离去，大家都感到好奇。</dd>
+				<dd>He is such a curious boy, always asking questions.|他这个孩子求知欲很强，总是爱提问。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4>handbag</h4>
+			<dl>
+				<dt>n.小手提包；（尤指）坤包|a small bag for money, keys, etc., carried especially by women</dt>
+				<dd>Mary delved in her handbag for the passport.|玛丽在手提包里翻找护照。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4>powder</h4>
+			<dl>
+				<dt>n.[U] 扑面粉；美容粉|a very fine, soft, dry substance that you can put on your face to make it look smooth and dry
+				</dt>
+				<dd>The face powder adheres well to the skin.|这种扑面粉附着力强。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4>compact</h4>
+			<dl>
+				<dt>n.带镜小粉盒|a small flat box with a mirror, containing powder that women use on their faces</dt>
+			</dl>
+		</section>
+		<section>
+			<h4>make up</h4>
+			<dl>
+				<dt>phr.make up (= make yourself/sb ↔ up) 化妆；上妆|to put powder, lipstick , etc. on your/sb's face to make it more
+					attractive or to prepare for an appearance in the theatre, on television, etc.</dt>
+				<dd>She spent too much time making herself up.|她在化妆上花去了太多时间。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4>put away</h4>
+			<dl>
+				<dt>phr. v. 把…收起；放好|If you put something away, you put it into the place where it is normally kept when it is not
+					being used, for example in a drawer.</dt>
+				<dd>She finished putting the milk away and turned around.|她把牛奶收好后转过身来。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4>amused</h4>
+			<dl>
+				<dt>adj.逗乐的；觉得好笑的|thinking that sb/sth is funny, so that you smile or laugh</dt>
+				<dd>There was an amused look on the President's face.|总统面带愉悦的神情。</dd>
+				<dd>We were all amused at his stories.|我们都被他的故事逗笑了。</dd>
+				<dd>He was amused to see how seriously she took the game.|他看见她玩这个游戏十分认真的样子，觉得好笑。</dd>
+				<dd>Janet was not amused (= she was annoyed or angry).|珍妮特感到不悦。</dd>
+			</dl>
+		</section>
+		<section>
+			<h4>embarrassed</h4>
+			<dl>
+				<dt>adj.~ (about/at sth) | ~ (to do sth) (of a person or their behaviour 人或行为) （尤指在社交场合）窘迫的，尴尬的，害羞的|shy, awkward
+					or ashamed, especially in a social situation</dt>
+				<dd>She's embarrassed about her height.|她因自己个子高而困窘。</dd>
+				<dd>He felt embarrassed at being the centre of attention.|他因自己成为众人注目的中心而感到很尴尬。</dd>
+				<dd>Some women are too embarrassed to consult their doctor about the problem.|有些妇女太害羞，不愿就这个问题向医生咨询。</dd>
+				<dd>Her remark was followed by an embarrassed silence.|她的话讲完后，接下来便是难堪的沉默。</dd>
+				<dd>I've never felt so embarrassed in my life!|我一生中从未感到如此难堪过！</dd>
+			</dl>
+		</section>
+	</section>
+</template>

@@ -1,0 +1,218 @@
+main#___vue___ {
+	div.code-toolbar {
+		position: relative;
+
+		&:hover .toolbar button { opacity: 1; }
+
+		.toolbar {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			transition: opacity .3s ease-in-out;
+
+			button {
+				direction: ltr;
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				z-index: 3;
+				border: 0;
+				border-radius: 4px;
+				width: 40px;
+				height: 40px;
+				background-color: #292d3e;
+				cursor: pointer;
+				background-image: url("@/computer/pinia/assets/copy.svg");
+				background-position: 50%;
+				background-size: 20px;
+				background-repeat: no-repeat;
+				opacity: 0;
+				transition: border-color .25s, background-color .25s, opacity .25s;
+				box-shadow: none;
+
+				&:hover{
+					background-color: #343848;
+				}
+
+				span {
+					opacity: 0;
+				}
+
+				&[data-copy-state="copy-success"]{
+					border-radius: 0 4px 4px 0;
+					background-color: #343848;
+					background-image: url(@/computer/pinia/assets/copied.svg);
+
+					span {
+						opacity: 1;
+						position: relative;
+						top: -1px;
+						right: 6px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border: 0;
+						border-right: 0;
+						border-radius: 4px 0 0 4px;
+						padding: 0 10px;
+						width: fit-content;
+						height: 40px;
+						text-align: center;
+						font-size: 12px;
+						font-weight: 500;
+						color: rgba(235, 235, 235, .6);
+						background-color: #343848;
+						white-space: nowrap;
+						transform: translate(calc(-100% - 1px));
+					}
+				}
+			}
+		}
+
+		div.___mask___ {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+
+    pre {
+			position: relative;
+			padding: 18px 25px;
+			background-color: #2a2d3d;
+      border-radius: 8px;
+			line-height: 1;
+			&::-webkit-scrollbar{display:none}
+
+			&>code {
+				display: block;
+				position: relative;
+				z-index: 1;
+				color: #a6accd;
+				font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+				font-size: 14px;
+				line-height: 1.5;
+				transition: color .5s;
+			}
+
+      .language-js,
+			.language-javascript {
+        .token.punctuation { color: #89ddff;}
+        .token.tag { color: #f07178; }
+				.token.number{ color: #F78C6C;}
+				.token.string{color: #C3E88D;}
+				.token.function{ color: #82AAFF;}
+				.token.operator {color: #89DDFF;}
+				.token.keyword {color:#F97583;}
+				.token.comment{color: #6A737D; }
+				.token.literal-property.property { color:#F07178; }
+      }
+
+			.language-ts {
+				color: #FFCB6B;
+
+				.token.keyword {color:#C792EA;}
+				.token.function {color: #F07178;}
+				.token.punctuation {color: #89DDFF;}
+				.token.builtin {color: #F78C6C;}
+				.token.comment{color: #676E95; font-style: italic;}
+
+				.token.parameter {
+					color: #FFCB6B;
+
+					.token.literal-property.property { color: #A6ACCD; }
+				}
+			}
+
+      .language-html {
+				// .token.tag { color:#9ECBFF; }
+				.token.punctuation {color: #89DDFF;}
+        .token.label { color: #89ddff; }
+        .token.mustache { color: #a6accd; }
+        .token.namespace { color: #c792ea; }
+        .token.attr-name { color: #c792ea; }
+        .token.attr-value { color:#C3E88D; }
+				.token.comment { color:#676E95; font-style:italic; }
+
+				.component { color: #FFCB6B; }
+				.mustache {color: #89DDFF;}
+
+				.token.script {
+					.token.language-javascript {
+						.token.string {color: #C3E88D;}
+						.token.function {color: #82AAFF;}
+						.token.comment{color: #676E95; font-style: italic;}
+					}
+				}
+      }
+
+			.mustache {
+				.mustacheTag { color: #E1E4E8;}
+			}
+
+			.language-bash {
+				color: #A6ACCD;
+
+				.token.function { color: rgb(179, 146, 240);}
+				.token.operator { color: #89DDFF; }
+			}
+    }
+  }
+}
+
+
+main#___vue___{
+
+	pre.line-numbers {
+		counter-reset: linenumber;
+
+		& > code {
+			position: relative;
+			z-index: 1;
+			padding: 0 30px;
+			white-space: inherit;
+
+			& > span.line-numbers-rows {
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				left: 0px;
+				width: 100%;
+				letter-spacing: -1px;
+				font-size: 1em;
+
+				& > span {
+					position: relative;
+					display: block;
+					counter-increment: linenumber;
+					transition: all 1s;
+
+					&:hover {
+						&::before { color: #999; }
+						&::after {
+							opacity: 1;
+							box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
+						}
+					}
+
+
+					&:before {
+						display: block;
+						float: left;
+						width: 20px;
+						content: counter(linenumber);
+						text-align: right;
+						color: transparent;
+						// color: #000;
+						transition: all .4s;
+					}
+
+					&:after {
+						// 注意，这个盒子不能加边框，会改变盒子大小，从而错位 （box-sizing: border-box; 没有效果）
+						display: block;
+						opacity: 0;
+						content: '-';
+						color: transparent;
+					}
+				}
+			}
+		}
+	}
+}

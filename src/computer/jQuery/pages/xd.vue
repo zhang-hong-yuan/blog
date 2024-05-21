@@ -1,0 +1,26 @@
+<template>
+	<h2>属性操作</h2>
+	<p>设置或获取元素<em>固有属性</em>。所谓元素固有属性就是元素本身自带的属性，比如 a 元素里面的 href，比如 input 元素里面的 type。</p>
+	<ul>
+		<li>获取属性 <code>prop(&quot;属性&quot;)</code></li>
+		<li>设置属性 <code>prop(&quot;属性&quot;, &quot;属性值&quot;)</code></li>
+
+	</ul>
+
+	<p>设置或获取元素<em>自定义属性</em>。用户自己给元素添加的属性。比如给 div 添加 index =“1”。</p>
+	<ul>
+		<li>获取属性 <code>attr(&quot;属性&quot;)</code> 类似原生 getAttribute()</li>
+		<li>设置属性 <code>attr(&quot;属性&quot;, &quot;属性值&quot;)</code> 类似原生 setAttribute()</li>
+		<li>移除属性：<code>removeAttr(&#39;属性名&#39;)</code></li>
+
+	</ul>
+	<p>该方法也可以获取 H5 自定义属性(需要写全名)。</p>
+
+	<p>数据缓存 data()，该方法可以在指定的元素上存取数据，并不会修改 DOM 元素结构。一旦页面刷新，之前存放的数据都将被移除。</p>
+	<ul>
+		<li>附加数据 <code>data(&quot;name&quot;,&quot;value&quot;)</code></li>
+		<li>获取数据 <code>date(&quot;name&quot;)</code></li>
+
+	</ul>
+	<p>同时，还可以读取 HTML5 自定义属性 data-index (读取时可以省略 data- )，得到的是数字型。</p>
+</template>

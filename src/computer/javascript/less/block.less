@@ -1,0 +1,56 @@
+blockquote {
+	margin: 16px 0;
+	padding: 1px 14px;
+	border-left: 3px solid #ccc;
+	color: #888;
+
+	p {
+		color: #888;
+	}
+}
+
+
+
+
+section {
+	margin: 28px 0;
+	padding: 16px;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+	background-color: #f9f9fb;
+	box-shadow: 0 1px 2px rgba(43,42,51,.05);
+
+	
+	header {
+		color: #1b1b1b;
+		font-weight: 600;
+
+		span { font-weight: normal; }
+	}
+
+	&.note {
+		background-color: rgba(0,133,242,.1);
+		border-left: 3px solid #0085f2;
+	}
+
+	&.warning {
+		background-color: rgba(255,42,81,.1);;
+		border-left: 4px solid #ff2a51;
+
+		header {
+
+			&::before	{
+				content: '⚠️ ';
+				color: #ff2a51;
+			}
+		}
+	}
+	
+	&>p:first-child{
+		margin-top: 0;
+	}
+
+	&>*:last-child{
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,64 @@
+body:has(main#___Vocabulary___) {
+	margin: 0;
+	text-align: left;
+}
+
+main#___Vocabulary___ {
+	box-sizing: border-box;
+	min-height: 88vh;
+	width: 100%;
+
+	padding: 20px 2px;
+	background-color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+
+	@import './word';
+	// @import './head';
+	// @import './list';
+
+	// @import './block';
+	// @import './inline';
+
+
+	// 复制到 anki 时在 main 上添加了 .___anki___ 类
+	@import './anki';
+
+
+
+	section {
+		margin: 16px 0;
+		color: #666;
+
+		// @import './section';
+	}
+
+
+
+
+	picture {
+		width: 100%;
+		// @import './media';
+	}
+
+	// 带有 figcaption 的 figure 是用来包裹示例
+
+
+	figure:has(table) {
+		overflow-x: auto;
+
+		// @import './table';
+	}
+
+	figure:has(figcaption) {
+		margin: 50px 0;
+		border-top: 1px solid #ccc;
+
+		// @import 'figure_example';
+	}
+}
+
+
+
+

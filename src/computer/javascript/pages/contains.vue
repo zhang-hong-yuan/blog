@@ -1,0 +1,36 @@
+<template>
+	<h1>Node.contains()</h1>
+
+	<p>Node 接口的 ‘contains()’ 方法返回一个布尔值，表示一个节点是否是给定节点的后代，即该节点本身、其直接子节点（childNodes）、子节点的直接子节点等。</p>
+
+	<pre>
+		<code v-code:js.nocopy>
+			Node.contains(otherNode)
+		</code>
+	</pre>
+
+	<dl>
+		<dt>‘otherNode’</dt>
+		<dd>要测试的节点。 otherNode 不是可选的，但是可以设置为 null。</dd>
+	</dl>
+
+	<p>返回一个布尔值，如果 ‘otherNode’ 包含在节点中会返回 ‘true’，否则返回 ‘false’。</p>
+
+	<p>如果 ‘otherNode’ 参数为 ‘null’，则 ‘contains()’ 始终返回 ‘false’。</p>
+
+
+	<figure>
+		<figcaption>示例</figcaption>
+
+		<p>下面的函数用来检查一个元素是否是 ‘body’ 元素的后代元素。由于 ‘contains’ 会包含元素自身，而确定 ‘body’ 是否包含自身不是设计 ‘isInPage’ 的意图，这种情况明确返回 ‘false’。</p>
+
+
+		<pre>
+			<code v-code:js>
+function isInPage(node) {
+  return node === document.body ? false : document.body.contains(node);
+}
+			</code>
+		</pre>
+	</figure>
+</template>

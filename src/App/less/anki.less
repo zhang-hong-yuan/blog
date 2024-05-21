@@ -1,0 +1,45 @@
+// anki 相关的样式
+span.cloze {
+	cursor: pointer;
+	border-bottom: 1px dashed #888;
+
+	&:hover {
+		border-bottom: 1px solid #666;
+
+		span.___mark___ {
+			border-bottom: 1px solid #666!important;
+		}
+	}
+
+	// 有注释时
+	&[title] {
+		border-bottom-style: dotted;
+
+		&:hover {
+			border-bottom:  1px solid #666;
+		}
+	}
+}
+
+
+
+// 复制时的提示框
+div.el-notification {
+	h5 {
+		max-width: 200px;
+		font-weight: normal;
+		color: #84624e;
+		white-space: nowrap;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+	}
+
+	footer {
+		margin-top: 16px;
+
+		div {
+			font-size: 12px;
+			line-height: 1.5;
+		}
+	}
+}

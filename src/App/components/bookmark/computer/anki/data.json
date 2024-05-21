@@ -1,0 +1,12 @@
+[
+	{
+		"name": "AnkiWeb",
+		"site": "https://apps.ankiweb.net/",
+		"logo": "anki.webp"
+	},
+	{
+		"name": "Anki Plugin",
+		"site": "https://ankiweb.net/shared/addons",
+		"logo": "anki_plugin.png"
+	}
+]

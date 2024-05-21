@@ -1,0 +1,130 @@
+
+
+
+
+
+
+		&:hover .toolbar button { opacity: 1; }
+
+		.toolbar {
+			position: absolute;
+			z-index: 10;
+			top: 10px;
+			right: 10px;
+			transition: opacity .3s ease-in-out;
+
+			button {
+				direction: ltr;
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				z-index: 3;
+				border: 1px solid #e2e2e3;
+				border-radius: 4px;
+				width: 40px;
+				height: 40px;
+				background-color: #f6f6f7;
+				cursor: pointer;
+				background-position: 50%;
+				background-size: 20px;
+				background-repeat: no-repeat;
+				opacity: 0;
+				transition: border-color .25s, background-color .25s, opacity .25s;
+				box-shadow: none;
+
+				&:hover{
+					background-color: #fff;
+				}
+
+				span {
+					opacity: 0;
+				}
+
+				&[data-copy-state="copy-success"]{
+					border-radius: 0 4px 4px 0;
+					background-color: #fff;
+
+					span {
+						opacity: 1;
+						position: relative;
+						top: -2px;
+						right: 6px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border: 1px solid #e2e2e3;
+						border-right: 0;
+						border-radius: 4px 0 0 4px;
+						padding: 0 10px;
+						width: fit-content;
+						height: 40px;
+						text-align: center;
+						font-size: 12px;
+						font-weight: 500;
+						color: rgba(60, 60, 67, .78);
+						background-color: #ffffff;
+						white-space: nowrap;
+						transform: translate(calc(-100% - 1px));
+					}
+				}
+			}
+		}
+
+		pre {
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 16px 0;
+			border-radius: 4px;
+			background-color:#f5f2f0;
+
+			mark {
+				color: inherit;
+				background: none;
+				border: 1px solid #000;
+				box-shadow: 0 0 2px #fff;
+				padding: 3px 1px;
+				background: rgba(0, 0, 0, 0.2);
+				margin: 3px 0;
+			}
+
+			&::-webkit-scrollbar { display: none; }
+
+			&.error {
+				background-color: rgba(211,0,56,.1);
+
+				&+div.toolbar{
+					opacity: 1;
+
+					&::before { content: '❌'; }
+					button { display: none; }
+				}
+			}
+
+			&.right {
+				background-color: rgba(0,121,54,.1);
+
+				&+div.toolbar{
+					opacity: 1;
+
+					&::before { content: '✔️ '; }
+					button { display: none; }
+				}
+			}
+
+			&.nocopy + div.toolbar { display: none;}
+
+			code {
+				display: block;
+				box-sizing: border-box;
+				min-width: 100%;
+
+				// 这两条是为了代码贴着 pre 的右边框
+				width: fit-content;
+				padding: 0 20px;
+
+
+				font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+				transition: color .5s;
+			}
+		}

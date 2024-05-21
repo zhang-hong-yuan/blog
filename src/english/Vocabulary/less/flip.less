@@ -1,0 +1,28 @@
+.flip {
+	position: relative;
+	height: 66px;
+
+	button {
+		position: absolute;
+		top: 0;
+		background-color: #f6f6f6;
+
+		&.prev {
+			left: 10px;
+
+			&::before {
+				content: '« ';
+				color: #999;
+			}
+		}
+
+		&.next {
+			right: 10px;
+
+			&::after {
+				content: ' »';
+				color: #999;
+			}
+		}
+	}
+}

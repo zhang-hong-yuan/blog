@@ -1,0 +1,42 @@
+main#___vue___ {
+	ol {
+		padding-left: 22px;
+		margin: 1px 0;
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 20px;
+
+		&.none { 
+			li:before{
+				display: none;
+			}
+		 }
+
+		&.mb0 {
+			li {
+				margin-bottom: 0px;
+			}
+		}
+
+		li {
+			position: relative;
+			margin: 1px 0;
+			margin-bottom: 10px;
+
+			&:before {
+				content: "";
+				position: absolute;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background-color: #bfbfbf;
+				transition: background-color .5s;
+				left: -1.25rem;
+				top: .75rem;
+				}
+		}
+	}
+
+}

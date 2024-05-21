@@ -1,0 +1,54 @@
+<template>
+	<h2>Operator</h2>
+	<p>运算符也被称为操作符，是用于实现赋值、比较和执行算数运算等功能的符号。下表列出了描述符的优先级，从最高到最低。</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th>运算符</th>
+					<th>顺序</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>属性运算符</td>
+					<td>【.】【[]】</td>
+				</tr>
+				<tr>
+					<td>小括号/函数调用符</td>
+					<td>【()】【new】</td>
+				</tr>
+				<tr>
+					<td>一元运算符</td>
+					<td>【!】【-】【+】【++】【--】【typeof】【void】【delete】</td>
+				</tr>
+				<tr>
+					<td>算数运算符</td>
+					<td>先【*】【/】【%】 后 【+】【-】</td>
+				</tr>
+				<tr>
+					<td>关系运算符</td>
+					<td>【&gt;】【&gt;=】【&lt;】【&lt;=】【in】【instanceof】</td>
+				</tr>
+				<tr>
+					<td>相等运算符</td>
+					<td>【==】【!=】【===】【!==】</td>
+				</tr>
+				<tr>
+					<td>逻辑运算符</td>
+					<td>先 【&amp;&amp;】 后 【||】</td>
+				</tr>
+				<tr>
+					<td>赋值运算符</td>
+					<td>【=】【+=】【-=】【*=】【**=】【/=】【%=】</td>
+				</tr>
+				<tr>
+					<td>逗号运算符</td>
+					<td>【,】</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<p>一元运算符里面的逻辑非【!】优先级很高。(众多的运算符可以根据所需表达式的个数，分为一元运算符、二元运算符、三元运算符)</p>
+	<p>函数调用符【()】，比如 js 自动调用点击事件：【targetElement.click()】</p>
+</template>

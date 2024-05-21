@@ -1,0 +1,25 @@
+pre {
+	line-height: 1.4em;
+	background-color: #f9f9f9;
+	padding: 8px 13px;
+	margin: 0;
+	border: 1px solid #d4d4d4;
+
+	&::-webkit-scrollbar { display: none; }
+
+	&.error {
+		background-color: #f9e9eb;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 8px;
+			right: 6px;
+			width: 18px;
+			height: 18px;
+
+			background-image: url(../assets/error.svg);
+			background-size: contain;
+		}
+	}
+}

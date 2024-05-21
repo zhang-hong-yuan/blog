@@ -1,0 +1,120 @@
+body:has(main#___html___) {
+	margin: 0;
+	background-color: #fff;
+
+	// 组件 word 中图片预览组件全屏时的样式
+	img.n-image-preview { border-radius: 5px;}
+}
+
+
+main#___html___ {
+	min-height: 88vh;
+	padding: 30px 2vw;
+
+	font-family: Quotes, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	font-synthesis: unset !important;
+	text-rendering: unset !important;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: .2px;
+	overflow-wrap: break-word;
+
+
+	@import './basic';
+	@import './head';
+	@import './list';
+
+	// 复制到 anki 时在 main 上添加了 .___anki___ 类
+	@import './anki';
+
+	@import './word';
+
+	@import './inline';
+
+	// @import './input';
+
+
+	@import './section';
+
+	// blockquote 用来显示原生 html 标签，所以样式表不要选中
+	blockquote:not(blockquote blockquote) {
+		padding: 16px 16px 50px;
+		margin: 0 0 28px;
+		border: 1px solid #cdcdcd;
+		border-radius: 1px;
+		background-color: #fff;
+		box-shadow: 0 1px 2px rgba(43, 42, 51, .05);
+
+
+		// @import './figure_reset';
+	}
+
+
+	figure:has(>table) {
+		overflow-x: auto;
+
+		@import './table';
+	}
+
+
+	picture:has(>img,video) {
+		width: 100%;
+		text-align: center;
+
+		@import './media';
+	}
+
+	// 带有 figcaption 的 figure 是用来包裹示例
+	figure:has( > figcaption) {
+		margin: 50px 0;
+		border-top: 1px solid #ccc;
+
+		@import 'figure_example';
+	}
+
+
+	// 代码相关
+	div.code-toolbar {
+		position: relative;
+		color: #000;
+		background-color: #e5eecc;
+		background-image: linear-gradient(#fff,#e5eecc 100px);
+		margin: 5px 0 10px;
+		padding: 33px 5px 20px;
+		border: 1px solid #d4d4d4;
+
+		div.toolbar {margin-right: 6px;}
+
+		.__pre_code_mask__ {
+			left: 6px!important;
+			width: calc(100% - 6px * 2)!important;
+			background-color: rgba(0, 0, 0, 0.06);
+		}
+
+		@import './pre';
+		@import './code_toolbar';
+	}
+
+	code {
+		color: #000;
+		min-height: 30px;
+		font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
+		font-size: 12px;
+		word-break: break-all;
+		word-wrap: break-word;
+
+		.token.punctuation { color: Olive; }
+
+		@import './code';
+
+		@import './code_lang_html';
+		@import './code_lang_css';
+		// @import './code_lang_less';
+		@import './code_lang_js';
+		@import './code_lang_json';
+
+		// @import './code_inline_color_preview';
+		// @import './code_match_braces';
+	}
+}

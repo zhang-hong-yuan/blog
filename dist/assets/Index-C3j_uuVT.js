@@ -1,0 +1,1 @@
+import{f as t,ao as r,a4 as _,o as c,c as a,m as s}from"./@vue-DejhS5Sx.js";const n={id:"___vue___"},v={__name:"Index",setup(i){return(p,m)=>{const e=t("router-view"),o=r("replace");return _((c(),a("main",n,[s(e)])),[[o]])}}};export{v as default};

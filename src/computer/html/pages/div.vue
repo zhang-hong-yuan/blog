@@ -1,0 +1,66 @@
+<template>
+	<h1>节标签</h1>
+
+	<table>
+		<tr>
+			<th>标签</th>
+			<th>描述</th>
+		</tr>
+		<tr>
+			<td>&lt;div&gt;</td>
+			<td>定义文档中的节。</td>
+		</tr>
+		<tr>
+			<td>&lt;span&gt;</td>
+			<td>定义文档中的节。</td>
+		</tr>
+		<tr>
+			<td>&lt;main&gt;</td>
+			<td>定义文档的主体部分。</td>
+		</tr>
+		<tr>
+			<td>&lt;nav&gt;</td>
+			<td>定义导航链接。</td>
+		</tr>
+		<tr>
+			<td>&lt;header&gt;</td>
+			<td>定义一个文档头部部分。</td>
+		</tr>
+		<tr>
+			<td>&lt;article&gt;</td>
+			<td>定义一个文章内容。</td>
+		</tr>
+		<tr>
+			<td>&lt;aside&gt;</td>
+			<td>定义其所处内容之外的内容。</td>
+		</tr>
+		<tr>
+			<td>&lt;section&gt;</td>
+			<td>定义了文档的某个区域。</td>
+		</tr>
+		<tr>
+			<td>&lt;footer&gt;</td>
+			<td>定义一个文档底部。</td>
+		</tr>
+		<tr>
+			<td>&lt;figure&gt;</td>
+			<td>figure 标签用于对元素进行组合。</td>
+		</tr>
+		<tr>
+			<td>&lt;figcaption&gt;</td>
+			<td>给 figure 元素定义说明文字。</td>
+		</tr>
+		<tr>
+			<td>&lt;dialog&gt;</td>
+			<td>定义一个对话框或者窗口。</td>
+		</tr>
+		<tr>
+			<td>&lt;details&gt;</td>
+			<td>定义了用户可见的或者隐藏的需求的补充细节。</td>
+		</tr>
+		<tr>
+			<td>&lt;summary&gt;</td>
+			<td>定义一个可见的标题。 当用户点击标题时会显示出详细信息。</td>
+		</tr>
+	</table>
+</template>

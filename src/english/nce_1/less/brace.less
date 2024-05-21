@@ -1,0 +1,135 @@
+@middle-radius: 10px;
+@end-radius: 10px;
+@border-width: 1px;
+@border-part-height: calc(50% - 4.5px);
+@tip-distace: 5px;
+
+
+
+.brace {
+	margin: 20px 0;
+	white-space: nowrap;
+
+	& > * {
+		display: inline-block;
+		margin: 0;
+		vertical-align: middle;
+	}
+
+	& > div {
+		line-height: 1.2;
+	}
+
+	ul {
+		padding-left: 1em;
+		margin: 0 !important;
+
+		li {
+			list-style: none;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+.brace .left_brace,
+.brace .right_brace {
+	margin-top: 0;
+	margin-left: 0px;
+}
+
+.left_brace,
+.right_brace {
+	position: relative;
+	padding-left: 16px;
+	margin-left: 15px;
+	list-style: none;
+}
+
+.right_brace {
+	display: inline-block;
+	margin-right: 0px;
+	padding-right: 14px;
+}
+
+.left_brace>.left_out,
+.right_brace>.right_out {
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	height: 100%;
+	width: 40px;
+	left: -12px;
+}
+
+.right_brace>.right_out {
+	left: calc(100% - 28px);
+	transform: rotate(180deg);
+}
+
+.left_brace>.left_out::before,
+.left_brace>.left_out::after,
+.left_brace>.left_out>.left_in::before,
+.left_brace>.left_out>.left_in::after,
+.right_brace>.right_out::before,
+.right_brace>.right_out::after,
+.right_brace>.right_out>.right_in::before,
+.right_brace>.right_out>.right_in::after {
+	content: '';
+	display: block;
+	position: absolute;
+	border-style: solid;
+	border-color: #5b5b66;
+	border-width: 0;
+}
+
+.left_brace>.left_out>.left_in::before,
+.left_brace>.left_out>.left_in::after,
+.right_brace>.right_out>.right_in::before,
+.right_brace>.right_out>.right_in::after {
+	left: 19px;
+	width: 5px;
+	height: @border-part-height;
+	border-left-width: @border-width;
+}
+
+.left_brace>.left_out::before,
+.left_brace>.left_out::after,
+.right_brace>.right_out::before,
+.right_brace>.right_out::after {
+	left: 15px;
+	width: 5px;
+	height: @border-part-height;
+	border-right-width: @border-width;
+}
+
+.left_brace>.left_out>.left_in::before,
+.right_brace>.right_out>.right_in::before {
+	top: 0;
+	border-top-width: @border-width;
+	border-top-left-radius: @end-radius;
+}
+
+.left_brace>.left_out>.left_in::after,
+.right_brace>.right_out>.right_in::after {
+	bottom: 0;
+	border-bottom-width: @border-width;
+	border-bottom-left-radius: @end-radius;
+}
+
+.left_brace>.left_out::before,
+.right_brace>.right_out::before {
+	top: @tip-distace;
+	border-bottom-width: @border-width;
+	border-bottom-right-radius: @middle-radius;
+}
+
+.left_brace>.left_out::after,
+.right_brace>.right_out::after {
+	bottom: @tip-distace;
+	border-top-width: @border-width;
+	border-top-right-radius: @middle-radius;
+}

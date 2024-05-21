@@ -1,0 +1,8 @@
+import{_ as m}from"./index-C58PDwY0.js";import{ao as s,o as r,c as e,e as o,q as t,a4 as p,F as c}from"./@vue-DejhS5Sx.js";import"./element-plus-BrY0m-Us.js";import"./@vueuse-DG8PRMz9.js";import"./@element-plus-BIOyB9cn.js";import"./lodash-es-CapuB_Of.js";import"./@popperjs-Be9rlJlp.js";import"./hammerjs-uHrd7ah6.js";import"./@babel-Cpj98o6Y.js";import"./pinia-B7SS5Sce.js";import"./naive-ui-DvnQ8VCf.js";import"./seemly-BiqVPN66.js";import"./date-fns-x7VUUoCw.js";import"./evtd-CI_DDEu_.js";import"./vooks-BvrI42AR.js";import"./vueuc-DNxWDit6.js";import"./@css-render-Wpowbghw.js";import"./css-render-Ct37b3-v.js";import"./@emotion-WldOFDRm.js";import"./vdirs-DL8EOfHr.js";import"./@juggle-C8OzoCMD.js";import"./@arco-design-CcQ42w85.js";import"./number-precision-BW_FzNZC.js";import"./lodash-DBaaQlBN.js";import"./vue-router-CTzOd6h0.js";import"./jquery-awXEzGOF.js";import"./prismjs-Cy_Hpibq.js";import"./primevue-C3o8vU3d.js";import"./pinia-plugin-persistedstate-RV7uh3T-.js";/* empty css                  *//* empty css                    */const n={},a=o("h1",null,"@charset",-1),l=o("p",null,[t("‘@charset’ CSS @规则指定样式表中使用的字符编码。它必须是样式表中的"),o("strong",null,"第一个元素"),t("，而前面不得有任何字符。因为它不是一个嵌套语句，所以不能在@规则条件组中使用。")],-1),_=o("p",null,"此 @规则在某些 CSS 属性中使用非 ASCII 字符时非常有用，例如 ‘content’。",-1);function d(h,u){const i=s("code");return r(),e(c,null,[a,l,o("p",null,[t("如果有多个 ‘@charset’ @规则被声明，只有第一个会被使用，而且不能在 HTML 元素或 HTML 页面的字符集相关 "),p((r(),e("code",null,[t("<style>")])),[[i,void 0,"html"]]),t(" 元素内的样式属性内使用。")]),o("pre",null,[t("			"),p((r(),e("code",null,[t(`
+/* 语法格式 */
+@charset "<charset>";
+
+@charset "UTF-8";
+@charset "iso-8859-15";
+			`)])),[[i,void 0,"css"]]),t(`
+		`)]),_],64)}const Q=m(n,[["render",d]]);export{Q as default};

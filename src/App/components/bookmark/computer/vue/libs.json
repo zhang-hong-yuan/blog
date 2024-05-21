@@ -1,0 +1,28 @@
+[
+	{
+		"name": "Vue",
+		"site": "https://cn.vuejs.org/api/",
+		"logo": "vue.svg",
+		"circ": "0"
+	},
+	{
+		"name": "Router",
+		"site": "https://router.vuejs.org/zh/guide/",
+		"logo": "router.svg"
+	},
+	{
+		"name": "Pinia",
+		"site": "https://pinia.vuejs.org/zh/core-concepts/",
+		"logo": "pinia.svg"
+	},
+	{
+		"name": "Vite",
+		"site": "https://vitejs.cn",
+		"logo": "vite.svg"
+	},
+	{
+		"name": "VueUse",
+		"site": "https://www.vueusejs.com/functions.html#category=State",
+		"logo": "vueuse.svg"
+	}
+]

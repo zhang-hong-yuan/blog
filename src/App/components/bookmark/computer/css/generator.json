@@ -1,0 +1,53 @@
+[
+	{
+		"name": "CSS Generator",
+		"site": "https://html-css-js.com/css/generator/box-shadow/",
+		"logo": "css_generator.png"
+	},
+	{
+		"name": "Gradient generator",
+		"site": "https://cssgradient.io",
+		"logo": "gradient_generator.svg"
+	},
+	{
+		"name": "贝赛尔曲线生成器",
+		"site": "https://cubic-bezier.com",
+		"logo": "cubic.png"
+	},
+	{
+		"name": "WAIT! Animate",
+		"site": "https://waitanimate.wstone.uk",
+		"logo": "wait_animate.png"
+	},
+	{
+		"name": "transition.css",
+		"site": "https://www.transition.style",
+		"logo": "transition.css.png"
+	},
+	{
+		"name": "svg generator",
+		"site": "https://app.haikei.app",
+		"logo": "haikei.svg"
+	},
+	{
+		"name": "Grid Generator",
+		"site": "https://cssgrid-generator.netlify.app",
+		"logo": "grid_generator.svg"
+	},
+	{
+		"name": "Layout Generator",
+		"site": "https://layout.bradwoods.io",
+		"logo": "layout.svg",
+		"circ": "0"
+	},
+	{
+		"name": "Color palette generator",
+		"site": "https://mybrandnewlogo.com/color-palette-generator",
+		"logo": "color_palette_generator.png"
+	},
+	{
+		"name": "Brad Woods Digital Garden",
+		"site": "https://garden.bradwoods.io",
+		"logo": "brad_woods_digital_garden.png"
+	}
+]

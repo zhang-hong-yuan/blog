@@ -1,0 +1,45 @@
+&:hover div.toolbar div.toolbar-item {
+	span.show_language_span { opacity: 0; }
+	button.copy-to-clipboard-button { opacity: 1; }
+}
+
+div.toolbar {
+	right: 10px;
+
+	div.toolbar-item {
+		position: absolute;
+		top: 0px;
+		right: 8px;
+
+		span.show_language_span {
+			opacity: 1;
+			color: #888;
+			transition: opacity .3s ease-in-out;
+			font-size: 10px;
+		}
+
+		button.copy-to-clipboard-button {
+			padding: 0;
+			background-color: transparent;
+			border: none;
+			opacity: 0;
+			transition: all .2s;
+
+
+
+			background: hsla(0,0%,88%,.2);
+			box-shadow: 0 2px 0 0 rgba(0,0,0,.2);
+			border-radius: 12px;
+
+
+			span {
+				color: #bbb;
+			}
+		}
+	}
+}
+
+// 当 pre 存在 no-copy 类时：
+pre.no-copy + div.toolbar > div.toolbar-item:has(button.copy-to-clipboard-button){ display: none; }
+
+&:hover > pre.no-copy + div.toolbar > div.toolbar-item > span.show_language_span { opacity: 1; }

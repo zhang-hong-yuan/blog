@@ -1,0 +1,29 @@
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#app::-webkit-scrollbar,
+nav::-webkit-scrollbar,
+picture::-webkit-scrollbar {
+	display: none;
+}
+
+nav {
+	overscroll-behavior: contain;
+
+	&.contents,
+	&.related {
+		max-width: 90vw;
+
+		a {
+			color: #666;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}
+
+
+main {
+	max-width: var(--main-width);
+	min-height: 88vh;
+	margin: 0 auto;
+}

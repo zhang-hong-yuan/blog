@@ -1,0 +1,184 @@
+[
+	{
+		"name": "edra",
+		"site": "https://www.edra.com",
+		"logo": "edra.gif"
+	},
+	{
+		"name": "Ingo Maueer Now",
+		"site": "https://www.ingo-maurer.com",
+		"logo": "IngoMaueerNow.svg"
+	},
+	{
+		"name": "Valdesign",
+		"site": "https://www.valdesigncucine.it",
+		"logo": "valdesign.svg"
+	},
+	{
+		"name": "mesons",
+		"site": "https://www.mesons.it",
+		"logo": "mesons.svg"
+	},
+	{
+		"name": "valcucine",
+		"site": "https://www.valcucine.com",
+		"logo": "valcucine.png"
+	},
+	{
+		"name": "Arredo3",
+		"site": "https://www.Arredo3.com",
+		"logo": "arredo3.png"
+	},
+	{
+		"name": "Boffi",
+		"site": "https://www.boffi.com",
+		"logo": "boffi.png"
+	},
+	{
+		"name": "Molteni Group",
+		"site": "https://www.moltenigroup.com",
+		"logo": "moltenigroup.png"
+	},
+	{
+		"name": "Unifor",
+		"site": "https://www.unifor.it/en",
+		"logo": "unifor.png"
+	},
+	{
+		"name": "Molteni&C",
+		"site": "https://www.molteni.it/it/",
+		"logo": "molteni.svg",
+		"bgcolor": "#000"
+	},
+	{
+		"name": "Citterio",
+		"site": "https://www.citteriospa.com",
+		"logo": "citterio.svg"
+	},
+	{
+		"name": "ADL",
+		"site": "https://www.adldesign.it",
+		"logo": "adl.png",
+		"circ": "0"
+	},
+	{
+		"name": "Bluinterni",
+		"site": "https://www.bluinterni.it",
+		"logo": "bluinterni.png"
+	},
+	{
+		"name": "Edone",
+		"site": "https://www.edonedesign.it",
+		"logo": "edone.svg"
+	},
+	{
+		"name": "Hidrobox",
+		"site": "https://www.hidrobox.com",
+		"logo": "hidrobox.png"
+	},
+	{
+		"name": "SANGIACOMO",
+		"site": "https://www.msg.it",
+		"logo": ""
+	},
+	{
+		"name": "LEMA",
+		"site": "https://www.lemamobili.com/it/",
+		"logo": "lema.svg",
+		"circ": "0"
+	},
+	{
+		"name": "Poliform",
+		"site": "https://www.poliform.it/zh-hans/",
+		"logo": "poliform.webp"
+	},
+	{
+		"name": "Vittinox",
+		"site": "https://www.vittinox.com/",
+		"logo": "vittinox.png"
+	},
+	{
+		"name": "Ton",
+		"site": "https://www.ton.eu",
+		"logo": "ton.png"
+	},
+	{
+		"name": "CARL HANSEN",
+		"site": "https://www.carlhansen.com/",
+		"logo": "carlhansen.svg"
+	},
+	{
+		"name": "Zanotta",
+		"site": "https://www.zanotta.com",
+		"logo": "zanotta.png"
+	},
+	{
+		"name": "Prestige",
+		"site": "https://www.prestigemobili.com/",
+		"logo": "prestige.png",
+		"bgcolor": "#000"
+	},
+	{
+		"name": "WALLANDDECO",
+		"site": "https://www.wallanddeco.com/en-us",
+		"logo": "wallanddeco.png"
+	},
+	{
+		"name": "IMA",
+		"site": "https://www.imaschelling.com/",
+		"logo": "ima.png"
+	},
+	{
+		"name": "Bellavista",
+		"site": "https://www.bellavistacollection.com/",
+		"logo": "bellavista.svg",
+		"circ": "0"
+	},
+	{
+		"name": "Flexteam",
+		"site": "https://www.flexteam.it",
+		"logo": "flexteam.png",
+		"bgcolor": "#333"
+	},
+	{
+		"name": "desiree",
+		"site": "https://www.gruppoeuromobil.com/it",
+		"logo": "desiree.svg"
+	},
+	{
+		"name": "Liuni",
+		"site": "https://www.liuni.com",
+		"logo": "liuni.png"
+	},
+	{
+		"name": "valentini",
+		"site": "https://www.valentini.it",
+		"logo": "valentini.svg"
+	},
+	{
+		"name": "calligaris",
+		"site": "https://www.calligaris.com",
+		"logo": "calligaris.png"
+	},
+	{
+		"name": "egoitaliano",
+		"site": "https://www.egoitaliano.com/",
+		"logo": "egoitaliano.png"
+	},
+	{
+		"name": "extendowe",
+		"site": "https://www.extendoweb.com/",
+		"logo": "extendowe.svg"
+	},
+	{
+		"name": "livingdivani",
+		"site": "https://www.livingdivani.it",
+		"logo": "livingdivani.svg"
+	},
+	{
+		"name": "Flou",
+		"site": "https://www.flou.it/en/catalogs",
+		"logo": "flou.png",
+		"bgcolor": "#6a703d"
+	}
+]

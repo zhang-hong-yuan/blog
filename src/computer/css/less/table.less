@@ -1,0 +1,50 @@
+table {
+	border-collapse: collapse;
+	border: 1px solid #aaa;
+	width: 100%;
+	-webkit-border-horizontal-spacing: 2px;
+	-webkit-border-vertical-spacing: 2px;
+
+	th {
+		vertical-align: baseline;
+		padding: 10px 10px 10px 10px;
+		background-color: #3F3F3F;
+		border: 1px solid #3F3F3F;
+		text-align: left;
+		color: #fff;
+	}
+
+	td {
+		vertical-align: text-top;
+		padding: 9px 9px 9px 9px;
+		border: 1px solid #aaa;
+	}
+
+	.nowrap {
+		white-space: nowrap;
+	}
+
+	tbody {
+		tr:nth-child(odd) {
+			background-color: #F5F5F5;
+		}
+	}
+
+	&#demo-20240330-2355 {
+		 th {
+			vertical-align: middle;
+			font-weight: normal;
+			background-color: transparent;
+			color: #3F3F3F;
+			border: 1px solid #aaa;
+		}
+	}
+
+	&#demo-20240330-2337 {
+		td {
+			vertical-align: middle;
+
+			&:first-child { white-space: nowrap;}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+p:not(blockquote p)  {
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 14px;
+	line-height: 2em;
+	font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+
+
+	&.b {
+		font-weight: 700;
+	}
+
+	&:has(+figure > table),
+	&:has(+blockquote) {
+		margin-top: 1em;
+		margin-bottom: 0;
+	}
+}
+
+a {
+	color: #2a6419;
+
+	&:hover {
+		font-weight: 700;
+	}
+}

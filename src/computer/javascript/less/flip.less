@@ -1,0 +1,35 @@
+main#___javascript___ + nav.flip {
+	height: 66px;
+	max-width: var(--main-width);
+	margin: 12px auto;
+	border-top: 1px solid #f1f1f1;
+	position: relative;
+
+	button {
+		position: absolute;
+		top: 8px;
+		padding: 6px;
+		border: none;
+		border-radius: 6px;
+		background-color: transparent;
+
+		&.prev {
+			left: 8px;
+
+			&::before {
+				content: '« ';
+				color: #ccc;
+			}
+		}
+
+		&.next {
+			right: 8px;
+
+			&::after {
+				content: ' »';
+				color: #ccc;
+			}
+		}
+
+	}
+}

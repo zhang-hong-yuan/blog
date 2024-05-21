@@ -1,0 +1,94 @@
+main#___vue___ {
+
+	section {
+		margin: 28px 0;
+		padding: 20px 24px 0px 42px;
+		border-radius: 8px;
+		overflow-x: auto;
+		transition: color .5s,background-color .5s;
+		position: relative;
+		font-size: 14px;
+		line-height: 1.6;
+		font-weight: 500;
+		color: #0000008c;
+		background-color: #f9f9f9;
+
+		&.demo {
+			padding: 22px 24px;
+			border-radius: 8px;
+			box-shadow: 0 3px 12px rgba(0, 0, 0, .07), 0 1px 4px rgba(0, 0, 0, .07);
+			margin-bottom: 1.2em;
+			transition: background-color .5s ease;
+	
+			p {
+				margin: 0;
+			}
+
+		}
+		
+		&.note {
+			border: 1px solid #65b687;
+			
+			header {
+				
+				&::before {
+					content: 'ⓘ';
+					color: #65b687;
+				}
+			}
+		}
+
+		&.warning {
+			border: 1px solid #ffc517;
+	
+			header{
+				
+				&::before{
+					content: "⚠";
+					color: #ffc517;
+				}
+			}
+		}
+		
+		header{
+			margin-bottom: 8px;
+			font-size: 15px;
+			font-weight: 500;
+			color:#213547;
+			transition: color .5s;
+			
+			&::before{
+				position: absolute;
+				top: 20px;
+				left: 17px;
+				color: #0000008c;
+				content: 'ⓘ';
+				font-weight: 600;
+				font-size: 15px;
+			}
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 24px;
+			color: #0000008c;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1.6;
+		}
+	}
+
+	blockquote {
+		margin: 1em 0;
+		border-left: .2rem solid rgba(60, 60, 60, .29);
+		padding-left: 1em;
+		transition: border-color .5s;
+
+		p {
+			margin: 0;
+			font-size: 16px;
+			color: rgba(60, 60, 60, .7);
+			transition: color .5s;
+		}
+	}
+}

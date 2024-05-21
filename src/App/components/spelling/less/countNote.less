@@ -1,0 +1,53 @@
+body:has(nav#spelling){
+
+	div#englishSpellingStatic {
+		padding-right: 6px;
+		color: #888;
+		font-size: 12px;
+		text-align: right;
+
+		span {
+			cursor: pointer;
+
+			var {
+				padding-left: 3px;
+			}
+		}
+	}
+
+
+	div#englishSpellingWordStatic {
+		margin-bottom: 30px;
+		padding-right: 8px;
+		color: #bbb;
+		font-size: 12px;
+		text-align: right;
+
+		span {
+			cursor: pointer;
+
+			& > div {
+				vertical-align: bottom;
+			}
+
+			strong {
+				color: #50b142;
+				font-weight: normal;
+			}
+
+			var {
+				padding-left: 3px;
+			}
+		}
+	}
+
+
+	.count-note {
+		text-align: center;
+
+		b {
+			color: purple;
+			font-size: 20px;
+		}
+	}
+}

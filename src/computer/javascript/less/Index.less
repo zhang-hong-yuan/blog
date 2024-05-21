@@ -1,0 +1,89 @@
+body:has(main#___javascript___) {
+	margin: 0;
+}
+
+main#___javascript___ {
+  padding: 1px 2vw 10px;
+	background-color: #fff;
+	font-family: Quotes, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	letter-spacing: .2px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.5;
+	text-rendering: optimizeSpeed;
+	font-synthesis: unset !important;
+	-webkit-font-smoothing: antialiased;
+	overflow-wrap: break-word;
+	text-align: left;
+
+	@import './anki';
+
+	@import './basic';
+
+	@import './block';
+	@import './list';
+	@import './table';
+	@import './figure';
+	@import './picture';
+	@import './inline';
+
+
+
+	code {
+		font-family: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
+		color: #1b1b1b;
+
+		@import './code';
+	}
+
+	@import './code_lang_html';
+	@import './code_lang_js';
+
+	div.code-toolbar {
+		position: relative;
+
+		@import './code_toolbar';
+
+
+
+
+		div.__pre_code_mask__ {
+			background-color: rgba(0,0,0,.1);
+		}
+
+		pre {
+			padding: 18px 15px;
+			border-radius: 4px;
+			background-color:#f2f1f1;
+			overflow: auto;
+			font-size: 12px;
+			line-height: 1.7;
+
+
+
+			&.error {
+				background-color: rgba(211,0,56,.1);
+
+				&+div.toolbar{
+					opacity: 1;
+
+					&::before { content: '❌'; }
+					button { display: none; }
+				 }
+			}
+
+			&.right {
+				background-color: rgba(0,121,54,.1);
+
+				&+div.toolbar{
+					opacity: 1;
+
+					&::before { content: '✔️ '; }
+					button { display: none; }
+				 }
+			}
+
+
+		}
+	}
+}

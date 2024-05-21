@@ -1,0 +1,94 @@
+<template>
+	<h1>链接 </h1>
+
+
+	<p>链接非常重要 — 它们赋予 Web 网络属性。要植入一个链接，我们需要使用一个简单的元素 — &lt;a&gt; — a 是 "anchor" （锚）的缩写。</p>
+
+	<p>【&lt;a&gt;】 标签定义超链接。最重要的属性是 href 属性，它指定链接的目标。如果没有使用 href 属性，则不能使用 hreflang、media、rel、target 以及 type 属性。
+	</p>
+	<p>对于大部分标签，修改父级标签，子级标签特性也会改变。但某些标签确无法通过修改父级标签来改变子级标签特性，如a标签，修改其颜色特性，必须直接修改 a 标签的特性才可。</p>
+	<p><strong>链接分类</strong></p>
+	<ol>
+		<li>
+			<p>外部链接：例如【\&lt;a href=&quot;http:// www.baidu.com&quot;&gt;百度\&lt;/a&gt;】。</p>
+		</li>
+		<li>
+			<p>内部链接：网站内部页面之间的相互链接。直接链接内部页面名称即可，例如【&lt;a href=&quot;index.html&quot;&gt;首页&lt;/a &gt;】。</p>
+		</li>
+		<li>
+			<p>空链接：如果当时没有确定链接目标时，【&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;】。</p>
+		</li>
+		<li>
+			<p>下载链接：如果 href 里面地址是一个文件或者压缩包，会下载这个文件。</p>
+		</li>
+		<li>
+			<p>锚点链接：当我们点击链接，可以快速定位到页面中的某个位置。</p>
+			<ul>
+				<li>在链接文本的 href 属性中，设置属性值为 #名字 的形式，如【&lt;a href=&quot;#two&quot;&gt;第2集&lt;/a&gt;】</li>
+				<li>找到目标位置标签，里面添加一个 id 属性 = 刚才的名字 ，如 【\&lt;h3 id=&quot;two&quot;&gt;第2集介绍 \&lt;/h3&gt;】</li>
+
+			</ul>
+		</li>
+
+	</ol>
+	<br />
+	<p>通常在当前浏览器窗口中显示被链接页面，除非规定了其他 target。</p>
+
+	<figure>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>值</th>
+				<th>描述</th>
+			</tr>
+			<tr>
+				<td>href</td>
+				<td>URL</td>
+				<td>规定链接目标的 URL。必须属性。当为标签应用 href 属性时，它就具有了超链接的功能。<br />阻止跳转
+					【href=&quot;javascript:;&quot;】
+
+					<p>如果网址开始部分省略了 https:// 或者 http://，可能会得到错误的结果。在完成一个链接后，可以试着点击它来确保指向正确。</p>
+
+
+					<blockquote class="note">
+						<strong>备注：</strong>
+						href 这个名字可能开始看起来有点令人费解，代表超文本引用（ hypertext reference）。
+					</blockquote>
+
+				</td>
+			</tr>
+			<tr>
+				<td>target</td>
+				<td>_self 默认，当前页面跳转<br />_blank 新窗口打开<br />_parent 在父窗口中打开链接<br />_top
+					在当前窗体打开链接，并替换当前的整个窗体(框架页)<br /><em>framename</em></td>
+				<td>规定在何处打开目标 URL。即，用于指定链接的打开方式。</td>
+			</tr>
+			<tr>
+				<td>download</td>
+				<td><em>filename</em></td>
+				<td>指定下载链接</td>
+			</tr>
+			<tr>
+				<td>hreflang</td>
+				<td><em>language_code</em></td>
+				<td>规定目标 URL 的基准语言。</td>
+			</tr>
+			<tr>
+				<td>media</td>
+				<td><em>media_query</em></td>
+				<td>规定目标 URL 的媒介类型。默认值：all。</td>
+			</tr>
+			<tr>
+				<td>rel</td>
+				<td>alternate<br />author<br />bookmark<br />help<br />license
+					next<br />nofollow<br />noreferrer<br />prefetch<br />prev<br />search<br />tag</td>
+				<td>规定当前文档与目标 URL 之间的关系。</td>
+			</tr>
+			<tr>
+				<td>type</td>
+				<td><em>MIME_type</em></td>
+				<td>规定目标 URL 的 MIME 类型。<br />注：MIME = Multipurpose Internet Mail Extensions。</td>
+			</tr>
+		</table>
+	</figure>
+</template>

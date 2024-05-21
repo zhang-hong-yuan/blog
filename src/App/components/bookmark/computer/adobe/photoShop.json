@@ -1,0 +1,32 @@
+[
+	{
+		"name": "PhotoShop",
+		"site": "https://creativecloud.adobe.com/zh-Hans/learn/app/photoshop",
+		"logo": "ps.svg"
+	},
+	{
+		"name": "花瓣",
+		"site": "https://huaban.com",
+		"logo": "huaban.png"
+	},
+	{
+		"name": "Pinerest",
+		"site": "http://bddz.jiulannet.com/p.html",
+		"logo": "pinerest.png"
+	},
+	{
+		"name": "视觉中国",
+		"site": "https://www.vcg.com",
+		"logo": "vcg.svg"
+	},
+	{
+		"name": "ZCOOL 站酷",
+		"site": "https://www.zcool.com.cn",
+		"logo": "zcool.ico"
+	},
+	{
+		"name": "古田路9号",
+		"site": "https://www.gtn9.com",
+		"logo": "9.svg"
+	}
+]

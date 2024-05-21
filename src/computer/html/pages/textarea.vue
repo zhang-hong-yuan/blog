@@ -1,0 +1,59 @@
+<template>
+	<h1>&lt;textarea&gt;</h1>
+	<p>当用户输入内容较多的情况下，我们就不能使用文本框表单了，此时我们可以使用 【&lt;textarea&gt;】 标签。【&lt;textarea&gt;】 标签是用于定义多行文本输入的控件。</p>
+
+
+
+	<table>
+		<tr>
+			<th>属性</th>
+			<th>值</th>
+			<th>描述</th>
+		</tr>
+		<tr>
+			<td>autofocus</td>
+			<td>autofocus</td>
+			<td>规定当页面加载时，文本区域自动获得焦点。</td>
+		</tr>
+		<tr>
+			<td>disabled</td>
+			<td>disabled</td>
+			<td>规定禁用文本区域。</td>
+		</tr>
+		<tr>
+			<td>form</td>
+			<td><em>form_id</em></td>
+			<td>定义文本区域所属的一个或多个表单。</td>
+		</tr>
+		<tr>
+			<td>maxlength</td>
+			<td><em>number</em></td>
+			<td>规定文本区域允许的最大字符数。</td>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td><em>text</em></td>
+			<td>规定文本区域的名称。</td>
+		</tr>
+		<tr>
+			<td>placeholder</td>
+			<td>text</td>
+			<td>规定一个简短的提示，描述文本区域期望的输入值。</td>
+		</tr>
+		<tr>
+			<td>readonly</td>
+			<td>readonly</td>
+			<td>规定文本区域为只读。</td>
+		</tr>
+		<tr>
+			<td>required</td>
+			<td>required</td>
+			<td>规定文本区域是必需的/必填的。</td>
+		</tr>
+		<tr>
+			<td>wrap</td>
+			<td>hard<br />soft</td>
+			<td>规定当提交表单时，文本区域中的文本应该怎样换行。</td>
+		</tr>
+	</table>
+</template>

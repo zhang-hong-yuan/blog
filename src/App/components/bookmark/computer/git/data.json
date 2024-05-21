@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Git",
+		"site": "https://git-scm.com/",
+		"logo": "git.svg"
+	},
+	{
+		"name": "GitHub",
+		"site": "https://github.com",
+		"logo": "github.svg"
+	},
+	{
+		"name": "Gitee",
+		"site": "https://gitee.com",
+		"logo": "gitee.svg"
+	}
+]

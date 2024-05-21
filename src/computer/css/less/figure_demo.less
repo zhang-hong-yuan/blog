@@ -1,0 +1,1475 @@
+&#demo-20240329-1229 {
+	*[lang^="en"] {
+		color: green;
+	}
+	*.warning {
+		color: red;
+	}
+	*#maincontent {
+		border: 1px solid blue;
+	}
+ }
+&#demo-20240329-1419 {
+	span {
+		background-color: skyblue;
+	}
+ }
+&#demo-20240329-1447 {
+	.red {
+		color: #f33;
+	}
+
+	.yellow-bg {
+		background: #ffa;
+	}
+
+	.fancy {
+		font-weight: bold;
+		text-shadow: 4px 4px 3px #77f;
+	}
+ }
+&#demo-20240329-1452 {
+	#identified {
+		background-color: skyblue;
+	}
+ }
+&#demo-20240329-1506 {
+	a {
+		color: blue;
+	}
+
+	/* 以 "#" 开头的页面内部链接 */
+	a[href^="#"] {
+		background-color: gold;
+	}
+
+	/* 包含 "example" 的链接 */
+	a[href*="example"] {
+		background-color: silver;
+	}
+
+	/* 包含 "insensitive" 的链接，不区分大小写 */
+	a[href*="insensitive"] {
+		color: cyan;
+	}
+
+	/* 包含 "cAsE" 的链接，区分大小写 */
+	a[href*="cAsE"] {
+		color: pink;
+	}
+
+	/* 以 ".org" 结尾的链接 */
+	a[href$=".org"] {
+		color: red;
+	}
+
+	/* 以 "https" 开始，".org" 结尾的链接 */
+	a[href^="https"][href$=".org"] {
+		color: green;
+	}
+
+ }
+&#demo-20240329-1509 {
+	/* 将所有包含 `lang` 属性的 <div> 元素的字重设为 bold */
+	div[lang] {
+		font-weight: bold;
+	}
+
+	/* 将所有语言为美式英语的 <div> 元素的文本颜色设为蓝色 */
+	div[lang~="en-us"] {
+		color: blue;
+	}
+
+	/* 将所有语言为葡萄牙语的 <div> 元素的文本颜色设为绿色 */
+	div[lang="pt"] {
+		color: green;
+	}
+
+	/* 将所有语言为中文的 <div> 元素的文本颜色设为红色
+		无论是简体中文（zh-CN）还是繁体中文（zh-TW） */
+	div[lang|="zh"] {
+		color: red;
+	}
+
+	/* 将所有 `data-lang` 属性的值为 "zh-TW" 的 <div> 元素的文本颜色设为紫色 */
+	/* 备注：和 JS 不同，CSS 可以在不使用双引号的情况下直接使用带连字符的属性名 */
+	div[data-lang="zh-TW"] {
+		color: purple;
+	}
+
+ }
+&#demo-20240329-1512 {
+/* 根据文档语言不同，大小写敏感性不同 */
+ol[type="a"] {
+  list-style-type: lower-alpha;
+  background: pink;
+}
+ol[type="b" s] {
+  list-style-type: lower-alpha;
+  background: lime;
+}
+ol[type="B" s] {
+  list-style-type: upper-alpha;
+  background: grey;
+}
+ol[type="c" i] {
+  list-style-type: upper-alpha;
+  background: green;
+}
+
+ }
+&#demo-20240329-1545 {
+	li:first-of-type + li {
+		color: red;
+	}
+ }
+&#demo-20240329-1601 {
+	p ~ span {
+		color: red;
+	}
+
+ }
+&#demo-20240329-1610 {
+	span {
+		background-color: aqua;
+	}
+
+	div > span {
+		background-color: yellow;
+	}
+
+ }
+&#demo-20240329-1632 {
+	li {
+		list-style-type: disc;
+	}
+
+	li li {
+		list-style-type: circle;
+	}
+
+ }
+&#demo-20240329-1715 {
+	a:link {
+		/* 未访问链接 */
+		color: blue;
+	}
+	a:visited {
+		/* 已访问链接 */
+		color: purple;
+	}
+	a:hover {
+		/* 用户鼠标悬停 */
+		background: yellow;
+	}
+	a:active {
+		/* 激活链接 */
+		color: red;
+	}
+
+	p:active {
+		/* 激活段落 */
+		background: #eee;
+	}
+
+
+
+	// -----------------
+	form :active {
+		color: red;
+	}
+
+	form button {
+		background: white;
+	}
+
+ }
+&#demo-20240329-1734 {
+	a:any-link {
+		border: 1px solid blue;
+		color: orange;
+	}
+
+	/* WebKit 浏览器 */
+	a:-webkit-any-link {
+		border: 1px solid blue;
+		color: orange;
+	}
+
+ }
+&#demo-20240329-1819 {
+	div,
+	select {
+		margin: 8px;
+	}
+
+	/* Labels for checked inputs */
+	input:checked + label {
+		color: red;
+	}
+
+	/* Radio element, when checked */
+	input[type="radio"]:checked {
+		box-shadow: 0 0 0 3px orange;
+	}
+
+	/* Checkbox element, when checked */
+	input[type="checkbox"]:checked {
+		box-shadow: 0 0 0 3px hotpink;
+	}
+
+	/* Option elements, when selected */
+	option:checked {
+		box-shadow: 0 0 0 3px lime;
+		color: red;
+	}
+
+
+
+	/* Hide the toggle checkbox */
+	#expand-toggle {
+		display: none;
+	}
+
+	/* Hide expandable content by default */
+	.expandable {
+		visibility: collapse;
+		background: #ddd;
+	}
+
+	/* Style the button */
+	#expand-btn {
+		display: inline-block;
+		margin-top: 12px;
+		padding: 5px 11px;
+		background-color: #ff7;
+		border: 1px solid;
+		border-radius: 3px;
+	}
+
+	/* Show hidden content when the checkbox is checked */
+	#expand-toggle:checked ~ * .expandable {
+		visibility: visible;
+	}
+
+	/* Style the button when the checkbox is checked */
+	#expand-toggle:checked ~ #expand-btn {
+		background-color: #ccc;
+	}
+
+ }
+&#demo-20240329-2010 {
+	input:default {
+		box-shadow: 0 0 2px 1px coral;
+	}
+
+	input:default + label {
+		color: coral;
+	}
+
+ }
+&#demo-20240329-2022 {
+	input[type="text"]:disabled {
+		background: #ccc;
+	}
+
+ }
+&#demo-20240329-2042 {
+	.box {
+		background: pink;
+		height: 80px;
+		width: 80px;
+	}
+
+	.box:empty {
+		background: lime;
+	}
+
+ }
+&#demo-20240329-2102 {
+	input:enabled {
+		color: #2b2;
+	}
+
+	input:disabled {
+		color: #aaa;
+	}
+
+ }
+&#demo-20240329-2126 {
+	p:first-child {
+		color: lime;
+		background-color: black;
+		padding: 5px;
+	}
+
+	ul li {
+		color: blue;
+	}
+
+	ul li:first-child {
+		color: red;
+		font-weight: bold;
+	}
+ }
+&#demo-20240329-2136 {
+	p:first-of-type {
+		color: red;
+		font-style: italic;
+	}
+ }
+&#demo-20240329-2139 {
+	article :first-of-type {
+		background-color: pink;
+	}
+ }
+&#demo-20240329-2157 {
+	/* Safari 语法 */
+	:-webkit-full-screen {
+		background-color: yellow!important;
+	}
+
+	/* IE11 语法 */
+	:-ms-fullscreen {
+		background-color: yellow!important;
+	}
+
+	/* Standard 语法 */
+	:fullscreen {
+		background-color: yellow!important;
+	}
+
+	/* 设置按钮的样式 */
+	button {
+		padding: 20px;
+		font-size: 20px;
+	}
+ }
+&#demo-20240329-2238 {
+	.red-input:focus {
+		background: yellow;
+		color: red;
+	}
+
+	.blue-input:focus {
+		background: yellow;
+		color: blue;
+	}
+ }
+&#demo-20240330-0846 {
+	form {
+		border: 1px solid;
+		color: gray;
+		padding: 4px;
+	}
+
+	form:focus-within {
+		background: #ff8;
+		color: black;
+	}
+
+	input {
+		margin: 4px;
+	}
+ }
+&#demo-20240330-0930 {
+	section {
+		display: flex;
+		align-items: start;
+		justify-content: space-around;
+	}
+
+	article {
+		display: inline-block;
+		width: 40%;
+	}
+
+	h1,
+	h2 {
+		margin: 0 0 20px 0;
+	}
+
+	h1:has(+ h2) {
+		margin: 0;
+	}
+
+ }
+&#demo-20240330-0945 {
+	section {
+		display: flex;
+		align-items: start;
+		justify-content: space-around;
+	}
+
+	article {
+		display: inline-block;
+		width: 40%;
+	}
+
+	h1,
+	h2,
+	h3 {
+		margin: 0 0 20px 0;
+	}
+
+	:is(h1, h2, h3):has(+ :is(h2, h3, h4)) {
+		margin: 0;
+	}
+ }
+&#demo-20240330-1053 {
+	a {
+		background-color: powderblue;
+		transition: background-color 0.5s;
+	}
+
+	a:hover {
+		background-color: gold;
+	}
+
+ }
+&#demo-20240331-1114 {
+	input:indeterminate + label {
+		background: lime;
+	}
+
+	progress {
+		margin: 4px;
+	}
+
+	progress:indeterminate {
+		width: 80vw;
+		height: 50px;
+	}
+ }
+&#demo-20240330-1516 {
+	li {
+		list-style: none;
+		margin-bottom: 1em;
+	}
+
+	input {
+		width: 80px;
+		border: 1px solid black;
+	}
+
+	input:in-range {
+		background-color: rgba(0, 255, 0, 0.25);
+	}
+
+	input:out-of-range {
+		background-color: rgba(255, 0, 0, 0.25);
+		border: 2px solid red;
+	}
+
+	input:in-range + label::after {
+		color: green;
+		content: "okay.";
+	}
+
+	input:out-of-range + label::after {
+		color: red;
+		content: "out of range!";
+	}
+
+ }
+&#demo-20240330-1534 {
+	label {
+		display: block;
+		margin: 1px;
+		padding: 1px;
+	}
+
+	.field {
+		margin: 1px;
+		padding: 1px;
+	}
+
+	input:invalid {
+		background-color: #ffdddd;
+	}
+
+	form:invalid {
+		border: 5px solid #ffdddd;
+	}
+
+	input:valid {
+		background-color: #ddffdd;
+	}
+
+	form:valid {
+		border: 5px solid #ddffdd;
+	}
+
+	input:required {
+		border-color: #800000;
+		border-width: 3px;
+	}
+
+	input:required:invalid {
+		border-color: #c00000;
+	}
+
+ }
+&#demo-20240330-1539 {
+	/* 在无效的字段集后隐藏该字段集： */
+	fieldset:invalid ~ fieldset {
+		display: none;
+	}
+
+	/* 在表单无效时，将按钮变暗并禁用它： */
+	form:invalid button {
+		opacity: 0.3;
+		pointer-events: none;
+	}
+
+	input,
+	textarea {
+		box-sizing: border-box;
+		width: 100%;
+		font-family: monospace;
+		padding: 0.25em 0.5em;
+	}
+
+	button {
+		width: 100%;
+		border: thin solid darkgrey;
+		font-size: 1.25em;
+		background-color: darkgrey;
+		color: white;
+	}
+
+ }
+&#demo-20240330-1630 {
+	p:last-child {
+		color: lime;
+		background-color: black;
+		padding: 5px;
+	}
+	ul li {
+		color: blue;
+	}
+
+	ul li:last-child {
+		border: 1px solid red;
+		color: red;
+	}
+ }
+&#demo-20240330-1823 {
+	p em:last-of-type {
+		color: tomato;
+	}
+
+ }
+&#demo-20240330-1845 {
+	a:link {
+		background-color: gold;
+		color: green;
+	}
+
+ }
+&#demo-20240330-1913 {
+	.fancy {
+		text-shadow: 2px 2px 3px gold;
+	}
+
+	/* 类名不是 `.fancy` 的 <p> 元素*/
+	p:not(.fancy) {
+		color: green;
+	}
+
+	/* 非 <p> 元素 */
+	:not(p) {
+		text-decoration: underline;
+	}
+
+	/* 既不是 <div> 也不是 <span> 的元素 */
+	:not(div):not(span) {
+		font-weight: bold;
+	}
+
+	/* 不是 <div> 或 `.fancy` 的元素*/
+	:not(div, .fancy) {
+		text-decoration: overline underline;
+	}
+
+	/* <h2> 元素中不是有 `.foo` 类名的 <span> 元素 */
+	h2 :not(span.foo) {
+		color: red;
+	}
+
+ }
+&#demo-20240330-2038 {
+	/* 无效的规则，不会产生任何效果 */
+	p:not(.foo, :invalid-pseudo-class) {
+		color: red;
+		font-style: italic;
+	}
+
+	/* 选择所有的没有 .foo 类的 <p> 元素 */
+	p:not(:is(.foo, :invalid-pseudo-class)) {
+		color: green;
+		border-top: dotted thin currentcolor;
+	}
+
+	/* 选择所有没有 .foo 类或者 .bar 类的 <div> 元素 */
+	div:not(.foo, .bar) {
+		color: red;
+		font-style: italic;
+	}
+
+	/* 选择所有没有 .foo 或 .bar 类的 <div> 元素。 */
+	div:not(:is(.foo, .bar)) {
+		border-bottom: dotted thin currentcolor;
+	}
+
+ }
+&#demo-20240330-2350 {
+	h3 {
+		font-weight: 700;
+		font-size: 20px;
+	}
+	span,em {
+		display: inline-block;
+		padding: 6px 8px;
+		margin: 0 3px;
+		border: 1px solid tomato;
+	}
+	.first span:nth-child(2n + 1),
+	.second span:nth-child(2n + 1),
+	.third span:nth-of-type(2n + 1) {
+		background-color: tomato;
+	}
+
+ }
+&#demo-20240331-0006 {
+	ul {
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		border: 1px solid tomato;
+		margin: 3px;
+		padding: 3px 8px;
+		font-size: 18px;
+
+		&.noted {
+			border-bottom: 5px solid tomato;
+		}
+	}
+	li:nth-child(even of .noted) {
+		background-color: tomato;
+		border-bottom-color: seagreen;
+	}
+
+ }
+&#demo-20240331-0024 {
+	ul {
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		border: 1px solid tomato;
+		margin: 3px;
+		padding: 3px 8px;
+		font-size: 18px;
+
+		&.noted {
+			border-bottom: 5px solid tomato;
+		}
+	}
+
+	ul.one > li:nth-child(-n + 3 of .noted) {
+		background-color: tomato;
+		border-bottom-color: seagreen;
+	}
+
+	ul.two > li.noted:nth-child(-n + 3) {
+		background-color: tomato;
+		border-bottom-color: seagreen;
+	}
+
+ }
+&#demo-20240331-0042 {
+	table {
+		display: inline-block;
+		width: 45%;
+		border-collapse: initial;
+		border: none;
+
+		th {
+			text-align: center;
+		}
+
+		td {
+			padding: 3px 8px;
+		}
+	}
+	.broken > tbody > tr:nth-child(even) {
+		background-color: silver;
+	}
+
+	.fixed > tbody > tr:nth-child(even of :not([hidden])) {
+		background-color: silver;
+	}
+
+ }
+&#demo-20240331-1150 {
+	table {
+		width: fit-content;
+		border: 1px solid blue;
+	}
+
+	/* Selects the last three elements */
+	tr:nth-last-child(-n + 3) {
+		background-color: pink;
+	}
+
+	/* Selects every element starting from the second to last item */
+	tr:nth-last-child(n + 2) {
+		color: blue;
+	}
+
+	/* Select only the last second element */
+	tr:nth-last-child(2) {
+		font-weight: 600;
+	}
+
+	/* If there are at least three list items,
+		style them all */
+	li:nth-last-child(n + 3),
+	li:nth-last-child(n + 3) ~ li {
+		color: red;
+	}
+ }
+&#demo-20240331-1216 {
+	span:nth-last-of-type(2) {
+		background-color: lime;
+	}
+ }
+&#demo-20240331-1229 {
+	div:only-child {
+		color: red;
+	}
+
+	div {
+		display: inline-block;
+		margin: 6px;
+		outline: 1px solid;
+	}
+
+	li li {
+		list-style-type: disc;
+	}
+
+	li:only-child {
+		color: red;
+		list-style-type: square;
+	}
+
+ }
+&#demo-20240331-1239 {
+	main :only-of-type {
+		color: red;
+	}
+
+ }
+&#demo-20240331-1631 {
+	label {
+		display: block;
+		margin: 1px;
+		padding: 1px;
+	}
+
+	.field {
+		margin: 1px;
+		padding: 1px;
+	}
+
+	input:optional {
+		border-color: rebeccapurple;
+		border-width: 3px;
+	}
+
+ }
+&#demo-20240331-1835 {
+	input {
+		border: 3px solid black;
+		outline: none;
+		padding: 3px;
+	}
+
+	input:placeholder-shown {
+		border-color: teal;
+		font-style: italic;
+	}
+
+	input::placeholder {
+		color: purple;
+	}
+ }
+&#demo-20240331-1850 {
+	input {
+		width: 6em;
+	}
+	#input2:placeholder-shown {
+		text-overflow: ellipsis;
+	}
+ }
+&#demo-20240331-1853 {
+	input {
+		background-color: #e8e8e8;
+		color: black;
+	}
+
+	input.studentid:placeholder-shown {
+		background-color: yellow;
+		color: red;
+		font-style: italic;
+	}
+
+ }
+&#demo-20240401-0923 {
+	input {
+		min-width: 25em;
+		margin: 5px 0;
+	}
+
+	input:-moz-read-only {
+		background: cyan;
+	}
+	input:read-only {
+		background: cyan;
+	}
+
+	p:-moz-read-only {
+		background: lightgray;
+	}
+	p:read-only {
+		background: lightgray;
+	}
+	p[contenteditable="true"] {
+		color: blue;
+	}
+
+ }
+&#demo-20240401-1103 {
+	input {
+		min-width: 25em;
+		margin: 5px 0;
+	}
+
+	input:-moz-read-write { background: cyan; }
+	input:read-write { background: cyan; }
+
+	p:-moz-read-write { background: lightgray; }
+	p:read-write { background: lightgray; }
+
+	p[contenteditable="true"] { color: blue; }
+ }
+&#demo-20240401-1338 {
+	label {
+		display: block;
+		margin: 1px;
+		padding: 1px;
+	}
+
+	.field {
+		margin: 1px;
+		padding: 1px;
+	}
+
+	input:required {
+		border-color: #800000;
+		border-width: 3px;
+	}
+
+	input:required:invalid {
+		border-color: #c00000;
+	}
+
+ }
+ &#demo-20240331-1423 {
+	@scope (.light-scheme) {
+		:scope {
+			padding: 8px;
+			background-color: plum;
+		}
+
+		a { color: darkmagenta; }
+	}
+
+	@scope (.dark-scheme) {
+		:scope {
+			padding: 8px;
+			background-color: darkmagenta;
+			color: antiquewhite;
+		}
+
+		a { color: plum; }
+	}
+
+ }
+&#demo-20240401-1519 {
+	p:target {
+		background-color: gold;
+	}
+
+	/* 在目标元素中增加一个伪元素*/
+	p:target::before {
+		font: 70% sans-serif;
+		content: "►";
+		color: limegreen;
+		margin-right: 0.25em;
+	}
+
+	/*在目标元素中使用 italic 样式*/
+	p:target i {
+		color: red;
+	}
+
+ }
+&#demo-20240401-1852 {
+	a {
+		/* 为某些属性指定非透明的默认值，使它们可以与 :visited 状态一起使用样式。 */
+		background-color: white;
+		border: 1px solid white;
+	}
+
+	a:visited {
+		background-color: yellow;
+		border-color: hotpink;
+		color: hotpink;
+	}
+
+ }
+&#demo-20240401-1909 {
+		font-family: sans-serif;
+		font-size: 150%;
+
+		h2 {
+			font-size: 34px;
+		}
+
+	:is(section.is-styling, aside.is-styling, footer.is-styling) a {
+		color: red;
+	}
+
+	:where(section.where-styling, aside.where-styling, footer.where-styling) a {
+		color: orange;
+	}
+
+	footer a {
+		color: blue;
+	}
+ }
+&#demo-20240401-1921 {
+	/* 奇数段 */
+p:nth-of-type(2n + 1) {
+  color: red;
+}
+
+/* 偶数段 */
+p:nth-of-type(2n) {
+  color: blue;
+}
+
+/* 第一段 */
+p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+/* 这将匹配第三个段落，因为它匹配的元素是 2n+1 并且具有 fancy 类。
+   第二个段落具有 fancy 类，但不匹配，因为它不是:nth-of-type(2n+1)。
+*/
+p.fancy:nth-of-type(2n + 1) {
+  text-decoration: underline;
+}
+
+ }
+&#demo-20240401-1935 {
+	.exciting-text::after {
+		content: "<- 让人兴兴兴奋！";
+		color: green;
+	}
+
+	.boring-text::after {
+		content: "<- 无聊！";
+		color: red;
+	}
+
+ }
+&#demo-20240401-1939 {
+	.ribbon {
+		background-color: #5bc8f7;
+	}
+
+	.ribbon::after {
+		content: "Look at this orange box.";
+		background-color: #ffba10;
+		border-color: black;
+		border-style: dotted;
+	}
+
+ }
+&#demo-20240401-1943 {
+	span[data-descr] {
+		position: relative;
+		text-decoration: underline;
+		color: #00f;
+		cursor: help;
+	}
+
+	span[data-descr]:hover::after {
+		content: attr(data-descr);
+		position: absolute;
+		left: 0;
+		top: 24px;
+		min-width: 200px;
+		border: 1px #aaaaaa solid;
+		border-radius: 10px;
+		background-color: #ffffcc;
+		padding: 12px;
+		color: #000000;
+		font-size: 14px;
+		z-index: 1;
+	}
+
+ }
+&#demo-20240401-1950 {
+	q::before {
+		content: "«";
+		color: blue;
+	}
+	q::after {
+		content: "»";
+		color: red;
+	}
+
+ }
+&#demo-20240404-0819 {
+	.ribbon {
+		background-color: #5bc8f7;
+	}
+
+	.ribbon::before {
+		content: "Look at this orange box.";
+		background-color: #ffba10;
+		border-color: black;
+		border-style: dotted;
+	}
+
+ }
+&#demo-20240404-0823 {
+	li {
+		list-style-type: none;
+		position: relative;
+		margin: 2px;
+		padding: 0.5em 0.5em 0.5em 2em;
+		background: lightgrey;
+		font-family: sans-serif;
+	}
+
+	li.done {
+		background: #ccff99;
+	}
+
+	li.done::before {
+		content: "";
+		position: absolute;
+		border-color: #009933;
+		border-style: solid;
+		border-width: 0 0.3em 0.25em 0;
+		height: 1em;
+		top: 1.3em;
+		left: 0.6em;
+		margin-top: -1em;
+		transform: rotate(45deg);
+		width: 0.5em;
+	}
+
+ }
+&#demo-20240404-0850 {
+	p::first-line {
+		text-transform: uppercase;
+	}
+ }
+&#demo-20240404-0902 {
+	ul li::marker {
+		color: red;
+		font-size: 1.5em;
+	}
+ }
+&#demo-20240404-0913 {
+	input::placeholder {
+		color: red;
+		font-size: 1.2em;
+		font-style: italic;
+	}
+ }
+&#demo-20240404-0916 {
+	::placeholder {
+		color: green;
+	}
+
+	.force-opaque::placeholder {
+		opacity: 1;
+	}
+
+ }
+&#demo-20240404-0947 {
+	/* 选中的文本是红色背景，金黄色的字体 */
+&::selection {
+  color: gold;
+  background-color: red;
+}
+
+/*选中的是蓝色背景，白色的字体的段落*/
+p::selection {
+  color: white;
+  background-color: blue;
+}
+ }
+&#demo-20240408-2200 {
+	.item {
+		width: min-content;
+		background-color: #8ca0ff;
+		padding: 5px;
+		margin-bottom: 1em;
+	}
+ }
+&#demo-20240408-2204 {
+	#container {
+		display: grid;
+		grid-template-columns: min-content min-content 1fr;
+		grid-gap: 5px;
+		box-sizing: border-box;
+		height: 200px;
+		width: 100%;
+		background-color: #8cffa0;
+		padding: 10px;
+	}
+
+	#container > div {
+		background-color: #8ca0ff;
+		padding: 5px;
+	}
+ }
+&#demo-20240408-2207 {
+	#container {
+		background-color: #8cffa0;
+		padding: 10px;
+		width: 200px;
+	}
+
+	.item {
+		width: max-content;
+		background-color: #8ca0ff;
+		padding: 5px;
+		margin-bottom: 1em;
+	}
+
+ }
+&#demo-20240408-2208 {
+	#container {
+		display: grid;
+		grid-template-columns: max-content max-content 1fr;
+		grid-gap: 5px;
+		box-sizing: border-box;
+		height: 200px;
+		width: 100%;
+		background-color: #8cffa0;
+		padding: 10px;
+	}
+
+	#container > div {
+		background-color: #8ca0ff;
+		padding: 5px;
+	}
+
+ }
+&#demo-20240408-2321 {
+	.min-content {
+		width: min-content;
+		border: 2px dotted rgb(96, 139, 168);
+	}
+	.max-content {
+		width: max-content;
+		border: 2px dotted rgb(96, 139, 168);
+	}
+ }
+&#demo-20240409-0805 {
+	.box {
+		display: flex;
+		border: 2px dotted #698aa5;
+	}
+
+	.box :first-child {
+		width: 150px;
+	}
+
+	.box > * {
+		flex: 0 0 auto;
+		border: 2px solid #698aa5;
+		border-radius: 8px;
+		background-color: #e1e8ed;
+	}
+ }
+&#demo-20240409-0820 {
+	.container {
+		font-family: arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.flex {
+		background: #6ab6d8;
+		padding: 10px;
+		margin-bottom: 50px;
+		border: 3px solid #2e86bb;
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		position: relative;
+	}
+
+	.flex:after {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 100%;
+		margin-top: 10px;
+		width: 100%;
+		color: #333;
+		font-size: 18px;
+	}
+
+	.flex1 { flex-basis: auto; }
+	.flex2 { flex-basis: max-content; }
+	.flex3 { flex-basis: min-content; }
+	.flex4 { flex-basis: fit-content; }
+	.flex5 { flex-basis: content; }
+	.flex6 { flex-basis: fill; }
+
+	.flex1:after { content: "auto"; }
+	.flex2:after { content: "max-content"; }
+	.flex3:after { content: "min-content"; }
+	.flex4:after { content: "fit-content"; }
+	.flex5:after { content: "content"; }
+	.flex6:after { content: "fill/-webkit-fill-available/-moz-available"; }
+ }
+&#demo-20240409-0847 {
+	#content {
+		display: flex;
+
+		justify-content: space-around;
+		flex-flow: row wrap;
+		align-items: stretch;
+	}
+
+	.box {
+		flex-grow: 1;
+		border: 3px solid rgba(0, 0, 0, 0.2);
+	}
+
+	.box1 {
+		flex-grow: 2;
+		border: 3px solid rgba(0, 0, 0, 0.2);
+	}
+ }
+&#demo-20240409-0924 {
+	.box {
+		display: flex;
+		margin-bottom: 10px;
+		border: 2px dotted #698aa5;
+	 }
+
+	 .box > * {
+		border: 2px solid #698aa5;
+		border-radius: 6px;
+		background-color: #e1e8ed;
+	 }
+
+	.grow-1 > * { flex: 1 1 0; }
+	.grow-0 > * { flex: 0 1 0; }
+ }
+&#demo-202040409-0934 {
+	.box {
+		display: flex;
+		border: 2px dotted #698aa5;
+	}
+
+	.box > * {
+		border: 2px solid #698aa5;
+		border-radius: 6px;
+		background-color: #e1e8ed;
+	 }
+
+	.one { flex: 1 1 0; }
+	.two { flex: 1 1 0; }
+	.three { flex: 2 1 0; }
+ }
+&#demo-20240409-1003 {
+	#content {
+		display: flex;
+		width: 500px;
+		border: 1px solid #ccc;
+		padding: 5px;
+	}
+
+	#content div {
+		flex-basis: 120px;
+		border: 3px solid rgba(0, 0, 0, 0.2);
+	}
+
+	.box  { flex-shrink: 1; }
+	.box1 { flex-shrink: 2; }
+ }
+&#demo-20240409-1019 {
+	.box {
+		display: flex;
+		width: 500px;
+		margin: 10px 0;
+		border: 2px dotted #698aa5;
+	}
+
+	.box > * {
+		width: 200px;
+		border: 2px solid #698aa5;
+		border-radius: 5px;
+		background-color: #e1e8ed;
+	}
+
+	.shrink-0 > * { flex: 0 0 auto; }
+	.shrink-1 > * { flex: 0 1 auto; }
+ }
+&#demo-20240409-1427 {
+	.box {
+		display: flex;
+		margin: 10px 0;
+		border: 2px dotted #698aa5;
+	}
+
+	.width-500 { width: 500px; }
+	.width-100 { width: 100px; }
+
+	.box > * {
+		flex: 1 1 auto;
+		border: 2px solid #698aa5;
+		border-radius: 5px;
+		background-color: #e1e8ed;
+	}
+ }
+&#demo-20240409-1505 {
+	.box {
+		display: flex;
+		width: 500px;
+		margin: 10px 0;
+		border: 2px dotted #698aa5;
+	}
+
+	.box > * {
+		width: 200px;
+		border: 2px solid #698aa5;
+		border-radius: 5px;
+		background-color: #e1e8ed;
+	}
+
+	.one { flex: 1 1 auto; }
+	.two { flex: 1 0 auto; }
+	.three { flex: 2 4 auto; }
+}
+&#demo-20240409-1750 {
+	#container {
+		height: 200px;
+		width: 240px;
+		align-items: center; /* 可以在运行实例中更改 */
+		background-color: #8c8c8c;
+	}
+
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 50px);
+	}
+
+	div > div {
+		box-sizing: border-box;
+		border: 2px solid #8c8c8c;
+		width: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#item1 {
+		background-color: #8cffa0;
+		min-height: 30px;
+	}
+
+	#item2 {
+		background-color: #a0c8ff;
+		min-height: 50px;
+	}
+
+	#item3 {
+		background-color: #ffa08c;
+		min-height: 40px;
+	}
+
+	#item4 {
+		background-color: #ffff8c;
+		min-height: 60px;
+	}
+
+	#item5 {
+		background-color: #ff8cff;
+		min-height: 70px;
+	}
+
+	#item6 {
+		background-color: #8cffff;
+		min-height: 50px;
+		font-size: 30px;
+	}
+
+	.row {
+		margin-top: 10px;
+
+		label { width: auto; }
+
+		select {
+			width: auto;
+			padding: 0;
+			font-size: 16px;
+		}
+	}
+
+ }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }
+// &#demo-20240409-1505 {  }

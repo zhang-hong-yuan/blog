@@ -1,0 +1,35 @@
+body:has(main#___vs_code___) {
+	margin: 0;
+	background-color: #fff;
+
+	div#app {
+
+		// 放在 main 外面是为了能访问到外层的 div#app.___anki___ 元素
+		// &.___anki___ {
+
+		// 	@import './anki';
+		// }
+
+
+		main#___vs_code___ {
+			min-height: 88vh;
+			padding: 30px 2vw;
+
+			font-family: Quotes, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+			font-size: 15px;
+			font-weight: 400;
+			font-synthesis: unset !important;
+			text-rendering: unset !important;
+			-webkit-font-smoothing: antialiased;
+			letter-spacing: .2px;
+			overflow-wrap: break-word;
+
+
+			// @import './basic';
+			// @import './head';
+			@import './list';
+
+			@import './inline';
+		}
+	}
+}

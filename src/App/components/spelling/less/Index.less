@@ -1,0 +1,169 @@
+div.word {
+	padding: 48px 28px 20px;
+	transition: all 2s;
+
+	nav {
+		button {
+			img {
+				width: 20px;
+			}
+		}
+	}
+
+	dl {
+		// 隐藏百词斩 video img logo
+		figure { display: none; }
+		dt {
+			font-weight: normal;
+
+			p {
+				color: #333;
+
+				// 词性标记
+				i.label {
+					padding: 1px 2px;
+					margin-right: 3px;
+					border-radius: 3px;
+					color: #fff;
+					font-style: normal;
+					font-size: 10px;
+					font-weight: 700;
+				}
+
+				// 常用搭配
+				span.comb {
+					b {
+						margin: 0 3px;
+						padding: 2px 6px;
+						border-radius: 3px;
+						background-color: #f1f1f1;
+						font-weight: normal;
+					}
+				}
+			}
+		}
+
+		dd {
+			margin-left: 26px;
+
+			p {
+				color: #888;
+
+				&.en {
+
+					span {
+						strong {
+							color: transparent;
+							border-bottom: 1px solid #888;
+						}
+					}
+					button { display: none; }
+				}
+
+				&.zh {
+					display: none;
+
+					span.___mark___ {
+						color: transparent;
+						border-bottom: 1px dotted #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+fieldset {
+	margin: 6px 0 20px;
+	// text-align: center;
+
+	label {
+		// display: block;
+		width: 166px;
+		color: #888;
+		font-size: 18px;
+		text-align: right;
+		vertical-align: middle;
+	}
+
+	input#englishWordInput {
+		min-width: 66px;
+		padding: 0 16px;
+		border-radius: 0;
+		border: none;
+		transition: color .3s;
+
+		color: skyblue;
+		font-size: 24px;
+		font-weight: 700;
+
+		&:focus-visible {
+			outline: none;
+			caret-color: darkorange;
+		}
+
+		&::placeholder {
+			color: #ccc;
+			font-size: 13px;
+			padding-left: 6px;
+			font-weight: normal;
+		}
+
+		&.void::placeholder {
+			color: tomato;
+			font-size: 18px;
+		}
+	}
+
+	ins#englishWordCorrect {
+		display: none;
+	}
+
+	p#englishSellingAnswer {
+		padding-left: 182px;
+		color: green;
+		font-style: normal;
+		font-size: 24px;
+		font-weight: 700;
+
+		// 消失动画会提前显示下一个要记忆的单词，所以不要显示
+		&.animate__fadeOutUp { display: none; }
+	}
+
+	table.forms {
+		display: block;
+		opacity: 0;
+		margin: 18px 0px;
+		color: #888;
+		transition: opacity .8s;
+
+		th {
+			width: 166px;
+			font-weight: normal;
+			font-size: 13px;
+			text-align: right;
+		}
+
+		td {
+			padding-left: 16px;
+		}
+
+		td:last-of-type { display: none; }
+	}
+
+
+	button {
+		display: block;
+		width: 88px;
+		margin: 0 auto;
+		background-color: #f1f1f1;
+		color: #888;
+		transition: all .3s;
+
+		&:hover {
+			background-color: #ddd;
+			color: #333;
+		}
+	}
+}
+

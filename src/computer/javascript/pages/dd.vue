@@ -1,0 +1,26 @@
+<template>
+	<h1>数据类型</h1>
+	<p>变量的数据类型决定了如何将代表这些值的位存储到计算机的内存中。JavaScript 是一种弱类型或者说动态语言。这意味着不用提前声明变量的类型，在程序运行过程中，类型会被自动确定。同时也意味着相同的变量可用作不同的类型。</p>
+	<p>js 把数据类型分为两类：<strong>简单数据类型</strong>和<strong>复杂数据类型</strong>。</p>
+	<p>JavaScript 表示“集合”的数据结构，主要是 【Array】 【Object】 【Map】 【Set】 四种数据集合，还可以组合使用。</p>
+
+
+	<p>【undefined】代表定义未赋值；【null】定义并赋值了，只是值为 【null】。</p>
+	<ul>
+		<li>【undefined】 值在布尔类型环境中会被当作 【false】。数值类型环境中会被转换为 【NaN】。</li>
+		<li>【null】 在数值类型环境中会被当作 【0】 来对待，而布尔类型环境中会被当作 【false】。</li>
+	</ul>
+	<pre v-code:js>console.log(undefined + 1) // NaN
+console.log(null + 1)      // 1</pre>
+	<p>为了方便操作基本数据类型，js 还提供了三个特殊的引用类型：String、Number 和 Boolean。基本包装类型就是把简单数据类型包装成为复杂数据类型，这样基本数据类型就有了属性和方法。</p>
+	<blockquote>不要使用【new Number()】、【new Boolean()】、【new String()】创建包装对象。</blockquote>
+	<br>
+	<p><strong>数据类型转换</strong>之隐式转换：某些运算符被执行时，系统内部自动将数据类型进行转换。</p>
+	<ul>
+		<li>【+】 号两边只要有一个是字符串，都会把另外一个转成字符串</li>
+		<li>除了 【+】 以外的算术运算符，比如 【- * /】 等都会把数据转成数字类型</li>
+	</ul>
+	<p>转换为<strong>字符串</strong>型：① toString()方法；② String()函数；③ 加号拼接字符串。</p>
+	<p>转换为<strong>数字</strong>型：① parseInt()函数；② parseFloat()函数；③ Number()函数；④ js隐式转换(- * /)。</p>
+	<p>转换为<strong>布尔</strong>型：Boolean()函数。通常不必把任意类型转换为【boolean】再判断。</p>
+</template>

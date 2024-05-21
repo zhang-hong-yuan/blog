@@ -1,0 +1,182 @@
+main#___vue_router___{
+
+	div.code-toolbar {
+		position: relative;
+		margin: 8px 0;
+
+		div.mask {
+			background-color: rgba(0,0,0,.075);
+		}
+
+		pre.notice ~ div.mask {
+			background-color: rgba(234, 179, 8, .14);
+		}
+
+		&:hover .toolbar button { opacity: 1; }
+
+		.toolbar {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			transition: opacity .3s ease-in-out;
+
+			button {
+				direction: ltr;
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				z-index: 3;
+				border: 1px solid #e2e2e3;
+				border-radius: 4px;
+				width: 40px;
+				height: 40px;
+				background-color: #f6f6f7;
+				cursor: pointer;
+				background-image: url("@/computer/router/assets/copied.svg");
+				background-position: 50%;
+				background-size: 20px;
+				background-repeat: no-repeat;
+				opacity: 0;
+				transition: border-color .25s, background-color .25s, opacity .25s;
+				box-shadow: none;
+
+				&:hover{
+					background-color: #fff;
+				}
+
+				span {
+					opacity: 0;
+				}
+
+				&[data-copy-state="copy-success"]{
+					border-radius: 0 4px 4px 0;
+					background-color: #fff;
+					background-image: url(@/computer/router/assets/logo.png);
+
+					span {
+						opacity: 1;
+						position: relative;
+						top: -2px;
+						right: 6px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border: 1px solid #e2e2e3;
+						border-right: 0;
+						border-radius: 4px 0 0 4px;
+						padding: 0 10px;
+						width: fit-content;
+						height: 40px;
+						text-align: center;
+						font-size: 12px;
+						font-weight: 500;
+						color: rgba(60, 60, 67, .78);
+						background-color: #ffffff;
+						white-space: nowrap;
+						transform: translate(calc(-100% - 1px));
+					}
+				}
+			}
+		}
+
+		pre {
+			border-radius: 4px;
+			background-color:#f2f1f1;
+			overflow: auto;
+			font-size: 14px;
+			line-height: 1.7;
+			margin: 0;
+			padding: 20px 0;
+			overflow-x: auto;
+
+			&::-webkit-scrollbar { display: none; }
+
+			&.error {
+				background-color: rgba(211,0,56,.1);
+
+				&+div.toolbar{
+					opacity: 1;
+
+					&::before { content: '❌'; }
+					button { display: none; }
+				}
+			}
+
+			&.right {
+				background-color: rgba(0,121,54,.1);
+
+				&+div.toolbar{
+					opacity: 1;
+
+					&::before { content: '✔️ '; }
+					button { display: none; }
+				}
+			}
+
+			&.nocopy + div.toolbar { display: none;}
+
+			code {
+				display: block;
+				box-sizing: border-box;
+				padding: 0 24px;
+				min-width: 100%;
+				font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+				line-height: 1.7;
+				transition: color .5s;
+
+			}
+
+			.language-js,
+			.language-javascript {
+				color:#005CC5;
+
+				.token.function{color: #6F42C1;}
+				.token.parameter{color: #E36209;}
+				.token.regex-flags{color: #676867;}
+				.token.number{color: #2F798A;}
+				.token.boolean{color: #507e7f;}
+				.token.string {color: #032F62;}
+				.token.quantifier.number{color: #007936}
+				.token.literal-property.property{ color: #24292E; }
+
+				.token.operator,
+				.token.keyword {color: #D73A49;}
+
+				.token.char-set.class-name,
+				.token.class-name{color: #d30038;}
+
+
+				.token.char-class-negation.operator,
+				.token.regex-delimiter,
+				.token.regex-source.language-regex{color: #1b1b1b;}
+
+				.token.punctuation { color: #24292E; }
+				.token.comment{color: #6A737D;}
+			}
+
+			.language-html {
+				color: #393A34;
+
+				.token.comment {color: #6A737D;}
+
+				.token.punctuation {color: #858585;}
+
+				.token.string,
+				.token.attr-name {color: #6F42C1;}
+
+				.token.tag { color: #22863A; }
+
+				.token.attr-value {color: #032F62;}
+
+				.token.literal-property.property { color:#998418;}
+				.mustache {color: #999999;}
+				.token.script { color: #B07D48;}
+			}
+
+			.language-bash {
+				.token.function { color: #6F42C1; }
+			}
+		}
+	}
+
+}

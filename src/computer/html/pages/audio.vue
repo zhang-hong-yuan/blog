@@ -1,0 +1,63 @@
+<template>
+	<h1>&lt;audio&gt;</h1>
+	<p>【&lt;audio&gt;】 标签定义声音，比如音乐或其他音频流。目前，【&lt;audio&gt;】 元素支持的3种文件格式：MP3、Wav、Ogg。</p>
+	<p>【&lt;video&gt;】 标签定义视频，比如电影片段或其他视频流。目前，【&lt;video&gt;】 元素支持三种视频格式：MP4、WebM、Ogg。</p>
+	<p>可以在 【&lt;audio&gt;】 和 【&lt;/video&gt;】 标签之间放置文本内容，这样不支持 【&lt;audio&gt;】 和 【&lt;video&gt;】 元素的浏览器就可以显示出该标签的信息。</p>
+
+
+
+	<table>
+		<tr>
+			<th>属性</th>
+			<th>值</th>
+			<th>描述</th>
+		</tr>
+		<tr>
+			<td>src</td>
+			<td><em>URL</em></td>
+			<td>要播放的音频/视频的 URL。</td>
+		</tr>
+		<tr>
+			<td>autoplay</td>
+			<td>autoplay</td>
+			<td>如果出现该属性，则音频/视频在就绪后马上播放。</td>
+		</tr>
+		<tr>
+			<td>controls</td>
+			<td>controls</td>
+			<td>如果出现该属性，则向用户显示控件，比如播放/暂停按钮。</td>
+		</tr>
+		<tr>
+			<td>loop</td>
+			<td>loop</td>
+			<td>如果出现该属性，则当媒介文件完成播放后再次开始播放。</td>
+		</tr>
+		<tr>
+			<td>muted</td>
+			<td>muted</td>
+			<td>如果出现该属性，音频/视频的音频输出为静音。</td>
+		</tr>
+		<tr>
+			<td>poster</td>
+			<td><em>URL</em></td>
+			<td>规定视频正在下载时显示的图像，直到用户点击播放按钮。</td>
+		</tr>
+		<tr>
+			<td>preload</td>
+			<td>auto<br />metadata<br />none</td>
+			<td>如果出现该属性，则音频/视频在页面加载时进行加载，并预备播放。如果使用 &quot;autoplay&quot;，则忽略该属性。
+				<ul>
+					<li>【auto】 指示一旦页面加载，则开始加载音频/视频。</li>
+					<li>【metadata】 指示当页面加载后仅加载音频/视频的元数据。</li>
+					<li>【none】 指示页面加载后不应加载音频/视频。</li>
+
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	<blockquote class="note">
+		谷歌浏览器把音频和视频自动播放禁止了。可以给视频标签添加 muted 属性来静音自动播放。
+		<p>只要为 audio 指定了新的 src 属性，且指定了 autoplay，那么，语音就会自动播放。</p>
+	</blockquote>
+</template>

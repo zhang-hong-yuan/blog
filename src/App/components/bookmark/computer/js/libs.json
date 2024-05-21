@@ -1,0 +1,18 @@
+[
+	{
+		"name": "jQuery",
+		"site": "http://jquery.asprain.cn",
+		"logo": "jquery.svg"
+	},
+	{
+		"name": "Lodash",
+		"site": "https://www.lodashjs.com",
+		"logo": "lodash.svg"
+	},
+	{
+		"name": "prismJs",
+		"site": "https://prismjs.com/download.html",
+		"logo": "prismjs.svg",
+		"circ": "0"
+	}
+]

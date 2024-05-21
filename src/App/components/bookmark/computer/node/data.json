@@ -1,0 +1,12 @@
+[
+	{
+		"name": "Node",
+		"site": "https://nodejs.org/en",
+		"logo": "node.png"
+	},
+	{
+		"name": "Node.Js 中文网",
+		"site": "https://nodejs.p2hp.com",
+		"logo": "nodeJs.svg"
+	}
+]

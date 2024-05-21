@@ -1,0 +1,43 @@
+ul:not(blockquote ul) {
+	// padding: 0 0 0 10px;
+	// margin: 10px 0 20px;
+
+	li {
+		margin-bottom: 10px;
+		list-style: circle;
+		font-size: 14px;
+	}
+}
+
+
+
+ol:not(blockquote ol)  {
+	li {
+		margin-bottom: 11px;
+		font-size: 14px;
+	}
+}
+
+
+
+
+dl {
+	margin: 0;
+
+	dt {
+		margin: 10px 0;
+		font-weight: normal;
+
+		span.emphasize {
+			margin: 0;
+		}
+	}
+
+	dd {
+		margin:0 14px 18px;
+
+		span.emphasize:not(dt span.emphasize) {
+			opacity: 0.6;
+		}
+	}
+}
