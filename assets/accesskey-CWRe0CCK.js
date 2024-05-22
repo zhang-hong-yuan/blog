@@ -1,0 +1,12 @@
+import{_ as i}from"./index-C58PDwY0.js";import{ao as c,o as r,c as o,e as t,q as e,a4 as l,F as d,at as n}from"./@vue-DejhS5Sx.js";import"./element-plus-BrY0m-Us.js";import"./@vueuse-DG8PRMz9.js";import"./@element-plus-BIOyB9cn.js";import"./lodash-es-CapuB_Of.js";import"./@popperjs-Be9rlJlp.js";import"./hammerjs-uHrd7ah6.js";import"./@babel-Cpj98o6Y.js";import"./pinia-B7SS5Sce.js";import"./naive-ui-DvnQ8VCf.js";import"./seemly-BiqVPN66.js";import"./date-fns-x7VUUoCw.js";import"./evtd-CI_DDEu_.js";import"./vooks-BvrI42AR.js";import"./vueuc-DNxWDit6.js";import"./@css-render-Wpowbghw.js";import"./css-render-Ct37b3-v.js";import"./@emotion-WldOFDRm.js";import"./vdirs-DL8EOfHr.js";import"./@juggle-C8OzoCMD.js";import"./@arco-design-CcQ42w85.js";import"./number-precision-BW_FzNZC.js";import"./lodash-DBaaQlBN.js";import"./vue-router-CTzOd6h0.js";import"./jquery-awXEzGOF.js";import"./prismjs-Cy_Hpibq.js";import"./primevue-C3o8vU3d.js";import"./pinia-plugin-persistedstate-RV7uh3T-.js";/* empty css                  *//* empty css                    */const p={},a=n("<h1>accesskey</h1><p>accesskey 全局属性 提供了为当前元素生成快捷键的方式。属性值必须包含一个可打印字符。</p><figure><table><tbody><tr><th>Browser</th><th>Windows</th><th>Mac</th></tr><tr><td>Chrome</td><td><kbd>Alt</kbd> + <kbd>key</kbd></td><td><kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>key</kbd></td></tr><tr><td>Safari</td><td><kbd>Alt</kbd> + <kbd>key</kbd></td><td><kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>key</kbd></td></tr></tbody></table></figure><p>除了糟糕的浏览器支持之外， ‘accesskey’ 属性还有很多问题：</p><ul><li>‘accesskey’ 值可能与系统或浏览器键盘快捷键或辅助技术功能相冲突。对于一个操作系统来说，辅助技术和浏览器组合可能无法与其他操作系统协同工作。</li><li>某些 ‘accesskey’ 值可能不会出现在某些键盘上，特别是在国际化是一个问题的时候。</li><li>依赖于数字的 ‘accesskey’ 值可能会让那些经历认知问题的人感到困惑，因为他们的数字与它触发的功能没有逻辑关联。</li><li>通知用户 ‘accesskeys’ 存在，这样他们就能意识到该功能。如果没有公开这些信息的方法，‘accesskeys’ 可能会被意外激活。</li></ul><p>由于这些问题，一般建议不要在大多数通用的网站和 web 应用程序中使用 ‘accesskey’ 属性。</p>",6),k=t("figcaption",null,"示例",-1),m=t("p",null,[e(`
+  If you need to relax, press the
+	`),t("strong",null,[t("u",null,"S")]),e(`
+	tress reliever!
+`)],-1),u=t("button",{accesskey:"s"},`
+	Stress reliever
+`,-1),b=t("p",null,"渲染结果：",-1),_=t("blockquote",null,[t("p",null,[e(" If you need to relax, press the "),t("strong",null,[t("u",null,"S")]),e("tress reliever! ")]),t("button",{accesskey:"s"},"Stress reliever")],-1);function h(y,f){const s=c("code");return r(),o(d,null,[a,t("figure",null,[k,t("pre",null,[e("		"),l((r(),o("code",null,[e(`
+`),m,e(`
+
+`),u,e(`
+		`)])),[[s,void 0,"html",{escape:!0}]]),e(`
+	`)]),b,_])],64)}const Y=i(p,[["render",h]]);export{Y as default};

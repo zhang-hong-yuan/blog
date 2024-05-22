@@ -1,0 +1,10 @@
+import{_ as n}from"./index-C58PDwY0.js";import{ao as p,o as e,c as r,a4 as i,q as t,F as a,e as o}from"./@vue-DejhS5Sx.js";import"./element-plus-BrY0m-Us.js";import"./@vueuse-DG8PRMz9.js";import"./@element-plus-BIOyB9cn.js";import"./lodash-es-CapuB_Of.js";import"./@popperjs-Be9rlJlp.js";import"./hammerjs-uHrd7ah6.js";import"./@babel-Cpj98o6Y.js";import"./pinia-B7SS5Sce.js";import"./naive-ui-DvnQ8VCf.js";import"./seemly-BiqVPN66.js";import"./date-fns-x7VUUoCw.js";import"./evtd-CI_DDEu_.js";import"./vooks-BvrI42AR.js";import"./vueuc-DNxWDit6.js";import"./@css-render-Wpowbghw.js";import"./css-render-Ct37b3-v.js";import"./@emotion-WldOFDRm.js";import"./vdirs-DL8EOfHr.js";import"./@juggle-C8OzoCMD.js";import"./@arco-design-CcQ42w85.js";import"./number-precision-BW_FzNZC.js";import"./lodash-DBaaQlBN.js";import"./vue-router-CTzOd6h0.js";import"./jquery-awXEzGOF.js";import"./prismjs-Cy_Hpibq.js";import"./primevue-C3o8vU3d.js";import"./pinia-plugin-persistedstate-RV7uh3T-.js";/* empty css                  *//* empty css                    */const c={},m=o("h1",null,"变更 state",-1),l=o("p",null,"除了用 ‘store.count++’ 直接改变 store，还可以调用 ‘【$patch】’ 方法。它允许用一个 state 的【补丁对象】在同一时间更改多个属性：",-1),u=o("p",null,"不过，用这种语法的话，有些变更真的很难实现或者很耗时：任何集合的修改（例如，向数组中添加、移除一个元素或是做 ‘splice’ 操作）都需要创建一个新的集合。因此，‘$patch’ 方法也接受一个【函数】来组合这种难以用补丁对象实现的变更。",-1),h=o("p",null,[t("两种变更 store 方法的主要区别是，‘$patch()’ 允许将多个变更归入 devtools 的同一个条目中。同时请注意，"),o("strong",null,"直接修改 state，‘$patch()’ 也会出现在 devtools 中"),t("，而且可以进行 time travel。")],-1),_=o("p",null,[t("注意："),o("strong",null,"不能完全替换掉"),t(" store 的 state，因为那样会破坏其响应性。但是，可以 patch 它。")],-1);function d(v,$){const s=p("code");return e(),r(a,null,[m,l,i((e(),r("pre",null,[t(`store.$patch({
+  count: store.count + 1,
+  age: 120,
+  name: 'DIO',
+})
+`)])),[[s,void 0,"js"]]),u,i((e(),r("pre",null,[t(`store.$patch((【state】) => {
+  state.items.push({ name: 'shoes', quantity: 1 })
+  state.hasChanged = true
+})
+`)])),[[s,void 0,"js"]]),h,_,i((e(),r("pre",null,[t("// 这实际上并没有替换`$state`\nstore.$state = { count: 24 }\n// 在它内部调用 `$patch()`：\nstore.$patch({ count: 24 })\n")])),[[s,void 0,"js"]])],64)}const U=n(c,[["render",d]]);export{U as default};

@@ -1,0 +1,1 @@
+const e={word:"null",bep:"nʌl",aep:"nʌl",form:{yx:"null"}},l=[{label:"adj",items:[{mean:"零值的；等于零的",dict:"having the value zero",demo:[{en:"a null result",zh:"‘毫无’结果"}]}]}];export{e as basic,l as detail};

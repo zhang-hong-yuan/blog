@@ -1,0 +1,10 @@
+import{_ as l}from"./index-C58PDwY0.js";import{ao as n,o,c as r,e as t,q as e,a4 as s,F as p}from"./@vue-DejhS5Sx.js";import"./element-plus-BrY0m-Us.js";import"./@vueuse-DG8PRMz9.js";import"./@element-plus-BIOyB9cn.js";import"./lodash-es-CapuB_Of.js";import"./@popperjs-Be9rlJlp.js";import"./hammerjs-uHrd7ah6.js";import"./@babel-Cpj98o6Y.js";import"./pinia-B7SS5Sce.js";import"./naive-ui-DvnQ8VCf.js";import"./seemly-BiqVPN66.js";import"./date-fns-x7VUUoCw.js";import"./evtd-CI_DDEu_.js";import"./vooks-BvrI42AR.js";import"./vueuc-DNxWDit6.js";import"./@css-render-Wpowbghw.js";import"./css-render-Ct37b3-v.js";import"./@emotion-WldOFDRm.js";import"./vdirs-DL8EOfHr.js";import"./@juggle-C8OzoCMD.js";import"./@arco-design-CcQ42w85.js";import"./number-precision-BW_FzNZC.js";import"./lodash-DBaaQlBN.js";import"./vue-router-CTzOd6h0.js";import"./jquery-awXEzGOF.js";import"./prismjs-Cy_Hpibq.js";import"./primevue-C3o8vU3d.js";import"./pinia-plugin-persistedstate-RV7uh3T-.js";/* empty css                  *//* empty css                    */const c={},m=t("h1",null,"::first-letter",-1),a=t("p",null,"CSS 伪元素 ‘::first-letter’ 会选中某 block-level element（块级元素）第一行的第一个字母，并且文字所处的行之前没有其他内容（如图片和内联的表格）。",-1),_=t("p",null,"首行只在 block-container box 内部才有意义，因此 ‘::first-letter’ 伪元素 只在 ‘display’ 属性值为 ‘block’, ‘inline-block’, ‘table-cell’, ‘list-item’ 或者 ‘table-caption’ 的元素上才起作用。其他情况下，‘::first-letter’ 毫无意义。",-1),d=t("p",null,[e("只有一小部分 CSS 可以在包含使用了 ‘::first-letter’ 伪元素选择器的 CSS 规则集声明块内运用，"),t("a",{href:"https://developer.mozilla.org/zh-CN/docs/Web/CSS/::first-letter",target:"_blank"},"详情请看。")],-1),f=t("section",{class:"note"},[t("strong",null,"注意："),e(" ‘::before’ 伪元素 和 ‘content’ 属性结合起来有可能会在元素前面注入一些文本。如此，‘::first-letter’ 将会匹配到 ‘content’ 文本的首字母。 ")],-1);function h(u,b){const i=n("code");return o(),r(p,null,[m,a,t("pre",null,[e("	"),s((o(),r("code",null,[e(`
+/* 使每段开头的第一个字母变红变大 */
+
+p::first-letter {
+  /* 使用:first 来兼容 IE8- */
+  color: red;
+  font-size: 130%;
+}
+	`)])),[[i,void 0,"css"]]),e(`
+`)]),_,d,f],64)}const U=l(c,[["render",h]]);export{U as default};

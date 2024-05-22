@@ -1,0 +1,1 @@
+const n="Arvin",r={loginCount:7,spelling:{$right:0,$wrong:0}},o={loginCount:1,spelling:{$right:0,$wrong:0}},t={$currentUser:n,Arvin:r,Tyla:o};export{n as $currentUser,r as Arvin,o as Tyla,t as default};
